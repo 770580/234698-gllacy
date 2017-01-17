@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Anton Kolotaev](https://up.htmlacademy.ru/htmlcss/16/user/234698).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
