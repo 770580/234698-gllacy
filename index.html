@@ -11,17 +11,60 @@
       </div>
       <nav>
         <ul>
-          <li>Каталог</li>
-          <li>Доставка и оплата</li>
-          <li>О Компании</li>
+          <li>
+            <a href="./catalog.html">Каталог</a>
+            <div class="catalog-menu">
+              <ul>
+                <li>
+                  <a href="#">Новинки</a>
+                </li>
+                <li>
+                  <a href="#">Сливочное</a>
+                </li>
+                <li>
+                  <a href="#">Щербеты</a>
+                </li>
+                <li>
+                  <a href="#">Фруктовый лед</a>
+                </li>
+                <li>
+                  <a href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">О Компании</a>
+          </li>
         </ul>
       </nav>
       <div class="header-buttons">
         <div class="search">
           <img src="search.jpg" alt="поиск">
+          <div class="search-input">
+            <form action="#" method="post">
+              <input type="text" name="search-text" placeholder="Что ищем">
+            </form>
+          </div>
         </div>
         <div class="sign-in">
           <a href="#">Вход</a>
+          <div class="sign-in-form">
+            <form action="#" method="post">
+              <input type="email" name="email" placeholder="Электронная почта">
+              <input type="password" name="password" placeholder="Пароль">
+              <div>
+                <input type="submit" value="Войти">
+              </div>
+              <div>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="cart-link">
           <a href="#">Пусто</a>
@@ -32,15 +75,34 @@
         8 812 450-25-25
       </div>
     </header>
-    <div class="slider">
-      <div class="slide-descritpion">
-        <b>Крем-брюле и пломбир
-        с малиновым мороженным
+    <div class="slider-wrapper">
+      <input type="radio" name="point" id="slide1" checked>
+      <input type="radio" name="point" id="slide2">
+      <input type="radio" name="point" id="slide3">
+      <div class="slider">
+        <div class="slides slide1">
+          <div class="slide-descritpion">
+            <b>Крем-брюле и пломбир
+            с малиновым мороженным</b>
+          </div>
+        </div>
+        <div class="slides slide2">
+          <div class="slide-descritpion">
+            <b>Крем-брюле и пломбир
+            с малиновым мороженным</b>
+          </div>
+        </div>
+        <div class="slides slide3">
+          <div class="slide-descritpion">
+            <b>Крем-брюле и пломбир
+            с малиновым мороженным</b>
+          </div>
+        </div>
       </div>
       <div class="slider-buttons">
-        <button class="slider-button slider-button-active"></button>
-        <button class="slider-button"></button>
-        <button class="slider-button"></button>
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
       </div>
       <div class="slider-link">
         <a href="#">Давайте оба!</a>
@@ -66,36 +128,44 @@
       <div class="item-container">
         <div class="item">
           <div class="hit">Хит</div>
-          <div class="price">310Р/кг</div>
-          <div class="description">Сливочное с
-          апельсиновым джемом
-          и цитрусовой стружкой</div>
+          <div class="price">310<span class="ruble">р.</span>/кг</div>
+          <div class="description">
+            Сливочное с
+            апельсиновым джемом
+            и цитрусовой стружкой
+          </div>
         </div>
       </div>
       <div class="item-container">
         <div class="item">
           <div class="hit">Хит</div>
-          <div class="price">380Р/кг</div>
-          <div class="description">Сливочно-кофейное с
-          кусочками шоколада</div>
+          <div class="price">380<span class="ruble">р.</span>/кг</div>
+          <div class="description">
+            Сливочно-кофейное с
+            кусочками шоколада
+          </div>
         </div>
       </div>
       <div class="item-container">
         <div class="item">
           <div class="hit">Хит</div>
-          <div class="price">355Р/кг</div>
-          <div class="description">Сливочно-клубничное с
-          присыпкой из белого
-          шоколада</div>
+          <div class="price">355<span class="ruble">р.</span>/кг</div>
+          <div class="description">
+            Сливочно-клубничное с
+            присыпкой из белого
+            шоколада
+          </div>
         </div>
       </div>
       <div class="item-container">
         <div class="item">
           <div class="hit">Хит</div>
-          <div class="price">415Р/кг</div>
-          <div class="description">Сливочное крем-брюле
-          с карамельной
-          подливкой</div>
+          <div class="price">415<span class="ruble">р.</span>/кг</div>
+          <div class="description">
+            Сливочное крем-брюле
+            с карамельной
+            подливкой
+          </div>
         </div>
       </div>
     </section>
@@ -104,32 +174,36 @@
         Магазин Глейси - это онлайн и офлайн магазин по продаже
         мороженного собственного производства на развес
       </b>
-      <div>
-        <p>Все наше мороженое изготавливается на
-        собственном производстве, с
-        использованием современного
-        оборудования и проверенных временем
-        технологий.</p>
+      <div class="about-left">
+        <p>
+          Все наше мороженое изготавливается на
+          собственном производстве, с
+          использованием современного
+          оборудования и проверенных временем
+          технологий.
+        </p>
+        <p>
+          Для приготовления мороженного
+          используются настоящие сливки и молоко
+          высочайшего качества. Все дополнительные
+          ингредиенты и добавки произведены из
+          натурального, экологически чистого сырья.
+        </p>
       </div>
-      <div>
-        <p>Закупка ингредиентов производится только
-        у проверенных фермерских хозяйств и
-        компаний, с которыми нас связывает
-        долговременное сотрудничество.</p>
-      </div>
-      <div>
-        <p>Для приготовления мороженного
-        используются настоящие сливки и молоко
-        высочайшего качества. Все дополнительные
-        ингредиенты и добавки произведены из
-        натурального, экологически чистого сырья.</p>
-      </div>
-      <div>
-        <p>Доставка нашего моложенного до
-        заказчиков осуществляется в специальном
-        термопаке, который не дает мороженному
-        растаять в пути и позволяет сохранть
-        превосходный вкус.</p>
+      <div class="about-right">
+        <p>
+          Закупка ингредиентов производится только
+          у проверенных фермерских хозяйств и
+          компаний, с которыми нас связывает
+          долговременное сотрудничество.
+        </p>
+        <p>
+          Доставка нашего моложенного до
+          заказчиков осуществляется в специальном
+          термопаке, который не дает мороженному
+          растаять в пути и позволяет сохранть
+          превосходный вкус.
+        </p>
       </div>
     </section>
     <section class="blog-and-sender">
@@ -140,10 +214,12 @@
         столу</a>
       </div>
       <div class="box sender">
-        <p>Подпишитесь на нашу рассылку
-        и будете всегда в курсе всего самого вкусного,
-        что у нас происходит. Обещаем не спамить и не
-        слать всякой ненужной ерунды. Честно =)</p>
+        <p>
+          Подпишитесь на нашу рассылку
+          и будете всегда в курсе всего самого вкусного,
+          что у нас происходит. Обещаем не спамить и не
+          слать всякой ненужной ерунды. Честно =)
+        </p>
         <form action="#" method="post">
           <input type="text" name="email" placeholder="Электронная почта">
           <input type="submit" value="Отправить">
