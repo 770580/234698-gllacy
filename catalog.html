@@ -6,12 +6,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="container clearfix">
       <nav>
         <div class="logo">
-          <a href="./index.html">
-            <img src="img/logo.png" width="154" height="64" alt="Глейси">
-          </a>
+          <img src="img/logo.png" width="154" height="64" alt="Глейси">
         </div>
         <ul class="main-menu">
           <li>
@@ -46,7 +44,7 @@
       </nav>
       <div class="header-buttons">
         <div class="search">
-          <img src="search.jpg" alt="поиск">
+          <img src="./img/search.png" alt="поиск">
           <div class="search-input">
             <form action="#" method="post">
               <input type="text" name="search-text" placeholder="Что ищем">
@@ -105,15 +103,17 @@
         8 812 450-25-25
       </div>
     </header>
-    <div class="breadcrumbs">
+    <div class="breadcrumbs container">
       <a href="./index.html">Главная</a>
       <span>&#187;</span>
       <a href="./catalog.html">Каталог</a>
       <span>&#187;</span>
       <a href="#">Сливочное</a>
     </div>
-    <h1>Сливочное мороженное</h1>
-    <div class="filter">
+    <div class="catalog-section container">
+      <h1>Сливочное мороженное</h1>
+    </div>
+    <div class="filter container">
       <form action="#" method="post">
         <div class="form-first-line">
           <div class="form-sort">
@@ -182,7 +182,7 @@
         </div>
       </form>
     </div>
-    <section class="goods">
+    <section class="goods container clearfix">
       <div class="item-container">
         <div class="item">
           <div class="price">310<span class="ruble">р.</span>/кг</div>
@@ -317,7 +317,7 @@
       </ul>
       <button class="right-arrow">&#62;</button>
     </div>
-    <footer>
+    <footer class="main-footer container clearfix">
       <div class="social">
         <a href="#">Твитер</a>
         <a href="#">Инстаграм</a>

@@ -47,6 +47,10 @@ nav {
   display: none;
 }
 
+.cart {
+  display: none;
+}
+
 .slider-wrapper {
   margin-bottom: 38px;
   min-height: 537px;
@@ -85,7 +89,7 @@ nav {
   outline: 1px solid black;
 }
 
-.item-container:last-child {
+.item-container:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -147,6 +151,40 @@ nav {
 .copyright {
   width: 189px;
   float: right;
+  outline: 1px solid black;
+}
+
+.breadcrumbs {
+  min-height: 44px;
+  outline: 1px solid black;
+}
+
+.catalog-section {
+  min-height: 47px;
+  margin-bottom: 21px;
+  outline: 1px solid black;
+}
+
+.filter {
+  min-height: 154px;
+  margin-bottom: 16px;
+  outline: 1px solid black;
+}
+
+.form-first-line div {
+  display: inline-block;
+}
+
+.form-second-line div {
+  display: inline-block;
+}
+
+.goods {
+  margin-bottom: 41px;
+}
+
+.pagination {
+  min-height: 59px;
   outline: 1px solid black;
 }
 
