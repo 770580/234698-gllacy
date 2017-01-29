@@ -6,12 +6,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="img/logo.png" width="154" height="64" alt="Глейси">
-      </div>
+    <header class="container clearfix">
       <nav>
-        <ul>
+        <div class="logo">
+          <img src="img/logo.png" width="154" height="64" alt="Глейси">
+        </div>
+        <ul class="main-menu">
           <li>
             <a href="./catalog.html">Каталог</a>
             <div class="catalog-menu">
@@ -44,7 +44,7 @@
       </nav>
       <div class="header-buttons">
         <div class="search">
-          <img src="search.jpg" alt="поиск">
+          <img src="search.png" alt="поиск">
           <div class="search-input">
             <form action="#" method="post">
               <input type="text" name="search-text" placeholder="Что ищем">
@@ -76,7 +76,7 @@
         8 812 450-25-25
       </div>
     </header>
-    <div class="slider-wrapper">
+    <div class="slider-wrapper container">
       <input type="radio" name="point" id="slide1" checked>
       <input type="radio" name="point" id="slide2">
       <input type="radio" name="point" id="slide3">
@@ -109,15 +109,15 @@
         <a href="#">Давайте оба!</a>
       </div>
     </div>
-    <section class="banners">
-      <div class="banner banner-malinka">
+    <section class="banners container clearfix">
+      <div class="banner banner-left">
         <h2>Малинка даром!</h2>
         <p>При покупке 2кг любого фруктового
         мороженного, добавим в ваш заказ банку
         малинового варенья бесплатно.</p>
         <a class="banner-button" href="#">Хочу варенье!</a>
       </div>
-      <div class="banner banner-chocolate">
+      <div class="banner banner-right">
         <h2>Шоколадки даром!</h2>
         <p>При покупке 2кг пломбира, добавим в ваш
         заказ упаковку вкуснейшей шоколадной
@@ -125,7 +125,7 @@
         <a class="banner-button" href="#">Хочу шоколадки!</a>
       </div>
     </section>
-    <section class="hits">
+    <section class="hits container clearfix">
       <div class="item-container">
         <div class="item">
           <div class="hit">Хит</div>
@@ -170,7 +170,7 @@
         </div>
       </div>
     </section>
-    <section class="about-shop">
+    <section class="about-shop container">
       <b>
         Магазин Глейси - это онлайн и офлайн магазин по продаже
         мороженного собственного производства на развес
@@ -207,7 +207,7 @@
         </p>
       </div>
     </section>
-    <section class="blog-and-sender">
+    <section class="blog-and-sender container clearfix">
       <div class="box blog">
         <h2>Новое в нашем блоге</h2>
         <a href="#">10 способов севировки
@@ -244,7 +244,7 @@
         <a href="#">Форма обратной связи</a>
       </div>
     </section>
-    <footer>
+    <footer class="main-footer container clearfix">
       <div class="social">
         <a href="#">Твитер</a>
         <a href="#">Инстаграм</a>

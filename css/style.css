@@ -1,6 +1,10 @@
 body {
   font-family: "Roboto";
   font-size: 14px;
+  background-color: #849D8F;
+  outline: 1px solid black;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -9,4 +13,145 @@ h1 {
 
 h2 {
   font-size: 16px;
+}
+
+.container {
+  margin: 0 27px;
+}
+
+header {
+  background-color: yellow;
+}
+
+nav {
+  width: 853px;
+  float: left;
+  background-color: lightblue;
+}
+
+.catalog-menu {
+  display: none;
+}
+
+.header-buttons {
+  width: 267px;
+  float: right;
+  background-color: lightblue;
+}
+
+.search-input {
+  display: none;
+}
+
+.sign-in-form {
+  display: none;
+}
+
+.slider-wrapper {
+  margin-bottom: 38px;
+  min-height: 537px;
+  outline: 1px solid black;
+}
+
+.banners {
+  margin-bottom: 42px;
+  outline: 1px solid black;
+}
+
+.banner {
+  width: 560px;
+  height: 230px;
+  outline: 1px solid black;
+}
+
+.banner-left {
+  float: left;
+}
+
+.banner-right {
+  float: right;
+}
+
+.hits {
+  margin-bottom: 35px;
+  outline: 1px solid black;
+}
+
+.item-container {
+  width: 267px;
+  min-height: 330px;
+  float: left;
+  margin-right: 26px;
+  outline: 1px solid black;
+}
+
+.item-container:last-child {
+  margin-right: 0;
+}
+
+.about-shop {
+  margin-bottom: 41px;
+  min-height: 305px;
+  outline: 1px solid black;
+}
+
+.blog-and-sender {
+  margin-bottom: 41px;
+  outline: 1px solid black;
+}
+
+.box {
+  width: 560px;
+  min-height: 222px;
+  outline: 1px solid black;
+}
+
+.blog {
+  float: left;
+}
+
+.sender {
+  float: right;
+}
+
+.map {
+  box-sizing: border-box;
+  height: 428px;
+  background-image: url(../img/map.jpg);
+}
+
+.main-footer {
+  margin-top: 23px;
+  outline: 1px solid black;
+}
+
+.social {
+  width: 291px;
+  margin-right: 109px;
+  float: left;
+  outline: 1px solid red;
+}
+
+.info-1 {
+  width: 162px;
+  float: left;
+  outline: 1px solid black;
+}
+
+.info-2 {
+  width: 293px;
+  float: left;
+  outline: 1px solid black;
+}
+
+.copyright {
+  width: 189px;
+  float: right;
+  outline: 1px solid black;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
