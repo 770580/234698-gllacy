@@ -121,21 +121,21 @@
       <div class="container">
         <form action="#" method="post">
           <div class="form-first-line">
-            <div class="form-sort">
-              <p>Сортировка:</p>
+            <fieldset class="form-sort">
+              <legend>Сортировка:</legend>
               <select name="sort">
                 <option value="popular" selected>по популярности</option>
                 <option value="cheap">сначала недорогие</option>
                 <option value="expensive">сначала доргие</option>
                 <option value="fatness">по жирности</option>
               </select>
-            </div>
-            <div class="price-range">
-              <p>Цена: 100 руб. - 500 руб.</p>
+            </fieldset>
+            <fieldset class="price-range">
+              <legend>Цена: 100 руб. - 500 руб.</legend>
               <div>
                 <input type="range" name="price">
               </div>
-            </div>
+            </fieldset>
             <fieldset class="fatness">
               <legend>Жирность:</legend>
               <div class="fatness-value">
