@@ -1,10 +1,7 @@
 body {
   font-family: "Roboto";
   font-size: 14px;
-  background-color: #849D8F;
-  outline: 1px solid black;
-  width: 1200px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 h1 {
@@ -15,18 +12,43 @@ h2 {
   font-size: 16px;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.radio-slider {
+  display: none;
+}
+
+.page-wrapper {
+  background-color: #849D8F;
+}
+
 .container {
-  margin: 0 27px;
+  margin: 0 auto;
+  width: 1146px;
+  padding: 0 27px;
+  outline: 1px solid black;
 }
 
 header {
   background-color: yellow;
 }
 
+.logo {
+  float: left;
+}
+
 nav {
-  width: 853px;
+  width: 700px;
   float: left;
   background-color: lightblue;
+}
+
+.main-menu-point {
+  display: inline-block;
 }
 
 .catalog-menu {
@@ -39,6 +61,12 @@ nav {
   background-color: lightblue;
 }
 
+.search,
+.sign-in,
+.cart-link {
+  display: inline-block;
+}
+
 .search-input {
   display: none;
 }
@@ -49,6 +77,10 @@ nav {
 
 .cart {
   display: none;
+}
+
+.work-info {
+  float: right;
 }
 
 .slider-wrapper {
@@ -78,10 +110,9 @@ nav {
 
 .hits {
   margin-bottom: 35px;
-  outline: 1px solid black;
 }
 
-.item-container {
+.cards-item {
   width: 267px;
   min-height: 330px;
   float: left;
@@ -89,8 +120,12 @@ nav {
   outline: 1px solid black;
 }
 
-.item-container:nth-child(4n) {
+.cards-item:nth-child(4n) {
   margin-right: 0;
+}
+
+.quick-show {
+  display: none;
 }
 
 .about-shop {
@@ -121,12 +156,13 @@ nav {
 .map {
   box-sizing: border-box;
   height: 428px;
+  width: 1200px;
+  margin: 0 auto;
   background-image: url(../img/map.jpg);
 }
 
 .main-footer {
   margin-top: 23px;
-  outline: 1px solid black;
 }
 
 .social {
@@ -168,14 +204,16 @@ nav {
 .filter {
   min-height: 154px;
   margin-bottom: 16px;
-  outline: 1px solid black;
 }
 
-.form-first-line div {
+.form-sort,
+.price-range,
+.fatness {
   display: inline-block;
 }
 
-.form-second-line div {
+.fillers,
+.form-sumbit {
   display: inline-block;
 }
 
@@ -185,11 +223,13 @@ nav {
 
 .pagination {
   min-height: 59px;
-  outline: 1px solid black;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+.pagination-points {
+  float: right;
+}
+
+.pagination-arrow,
+.pagination-point {
+  display: inline-block;
 }
