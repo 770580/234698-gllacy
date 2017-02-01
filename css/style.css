@@ -4,14 +4,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-size: 18px;
-}
-
-h2 {
-  font-size: 16px;
-}
-
 .clearfix::after {
   content: "";
   display: table;
@@ -33,7 +25,7 @@ h2 {
   outline: 1px solid black;
 }
 
-header {
+.main-header {
   background-color: yellow;
 }
 
@@ -41,13 +33,13 @@ header {
   float: left;
 }
 
-nav {
+.header-nav {
   width: 700px;
   float: left;
   background-color: lightblue;
 }
 
-.main-menu-point {
+.main-menu-item {
   display: inline-block;
 }
 
@@ -112,6 +104,11 @@ nav {
   margin-bottom: 35px;
 }
 
+.cards-list {
+  padding: 0;
+  list-style-type: none;
+}
+
 .cards-item {
   width: 267px;
   min-height: 330px;
@@ -134,9 +131,8 @@ nav {
   outline: 1px solid black;
 }
 
-.blog-and-sender {
+.blog-sender {
   margin-bottom: 41px;
-  outline: 1px solid black;
 }
 
 .box {
@@ -157,8 +153,17 @@ nav {
   box-sizing: border-box;
   height: 428px;
   width: 1200px;
+  padding-top: 63px;
+  padding-right: 27px;
   margin: 0 auto;
   background-image: url(../img/map.jpg);
+}
+
+.contacts {
+  width: 304px;
+  min-height: 305px;
+  margin-left: auto;
+  outline: 1px solid red;
 }
 
 .main-footer {
@@ -215,10 +220,6 @@ nav {
 .fillers,
 .form-sumbit {
   display: inline-block;
-}
-
-.goods {
-  margin-bottom: 41px;
 }
 
 .pagination {
