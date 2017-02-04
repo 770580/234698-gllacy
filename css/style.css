@@ -21,28 +21,44 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1146px;
-  padding: 0 27px;
-  outline: 1px solid black;
-}
-
-.main-header {
-  background-color: red;
+  width: 1148px;
+  padding: 0 26px;
 }
 
 .logo {
+  width: 154px;
+  height: 64px;
   float: left;
-  margin-top: 9px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .header-nav {
-  width: 700px;
+  width: 600px;
+  padding: 19px 0;
   float: left;
-  background-color: lightblue;
+  margin-top: 4px;
+}
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 0;
 }
 
 .main-menu-item {
   display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-menu-item a {
+  display: block;
+  padding: 8px 14px;
+  color: #ffffff;
 }
 
 .catalog-menu {
@@ -50,23 +66,90 @@ body {
 }
 
 .header-buttons {
-  width: 267px;
+  width: 264px;
+  margin-top: 23px;
   float: right;
-  background-color: lightblue;
+
+  font-size: 0;
 }
 
 .search,
 .sign-in,
-.cart-link {
+.cart-button {
   display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.search {
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin-right: 10px;
+  background: url(../img/search.png) no-repeat 50% 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  font-size: 0;
 }
 
 .search-input {
   display: none;
 }
 
+.sign-in {
+  float: left;
+  margin-right: 10px;
+}
+
+.enter {
+  position: relative;
+  display: block;
+  padding: 7px 16px;
+  padding-left: 45px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.enter::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 17px;
+  width: 21px;
+  height: 19px;
+  background: url(../img/signin.png) no-repeat 50% 50%;
+}
+
 .sign-in-form {
   display: none;
+}
+
+.cart-button {
+  float: right;
+  min-width: 119px
+}
+
+.cart-link {
+  position: relative;
+  display: block;
+  padding: 7px 16px;
+  padding-left: 45px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.cart-link::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 17px;
+  width: 21px;
+  height: 19px;
+  background: url(../img/cart.png) no-repeat 50% 50%;
 }
 
 .cart {
@@ -75,12 +158,20 @@ body {
 
 .work-info {
   float: right;
+  text-align: right;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone{
+  font-size: 22px;
+  line-height: 24px;
 }
 
 .slider-wrapper {
   margin-bottom: 38px;
   min-height: 537px;
-  outline: 1px solid black;
 }
 
 .banners {
