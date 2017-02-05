@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   margin: 0;
@@ -14,6 +14,7 @@ body {
 .btn {
   color: #ffffff;
   text-align: center;
+  text-decoration: none;
   background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -21,7 +22,15 @@ body {
 }
 
 .link-bright {
+  color: #ffffff;
+}
 
+.link-bright:hover {
+  color: #ffbc9e;
+}
+
+.link-bright:active {
+  color: #ffbc9e;
 }
 
 .link-dark {
@@ -213,6 +222,10 @@ input[name=slider-controls] {
   background: url(../img/signin_active.png) no-repeat 50% 50%;
 }
 
+.sign-in:hover .sign-in-form {
+  display: block;
+}
+
 .sign-in-form {
   min-width: 242px;
   position: absolute;
@@ -223,7 +236,7 @@ input[name=slider-controls] {
   border-radius: 6px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 
-  /* display: none; */
+  display: none;
 }
 
 .sign-in-form input[type="email"],
@@ -347,13 +360,41 @@ input[name=slider-controls] {
 
 .banners {
   margin-bottom: 42px;
-  outline: 1px solid black;
 }
 
 .banner {
   width: 560px;
   height: 230px;
-  outline: 1px solid black;
+  position: relative;
+  color: #ffffff;
+}
+
+.banner h2 {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.banner p {
+  position: absolute;
+  left: 20px;
+  top: 54px;
+  width: 520px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.banner a {
+  position: absolute;
+  bottom: 24px;
+  right: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 11px 25px;
+  border-radius: 23px;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
 .banner-left {
@@ -374,8 +415,8 @@ input[name=slider-controls] {
 }
 
 .cards-item {
+  position: relative;
   width: 267px;
-  min-height: 330px;
   float: left;
   margin-right: 26px;
   outline: 1px solid black;
@@ -385,14 +426,90 @@ input[name=slider-controls] {
   margin-right: 0;
 }
 
+.cards-image {
+  position: relative;
+}
+
+.cards-image-hit::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 61px;
+  height: 61px;
+  background: url(../img/hit.png);
+}
+
+.price {
+  position: absolute;
+  bottom: 17px;
+  font-size: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.ruble {
+  font-size: 0;
+  position: relative;
+  margin-right: 14px;
+}
+
+.ruble:before {
+  position: absolute;
+  content: "";
+  left: -12px;
+  bottom: -3px;
+  width: 31px;
+  height: 36px;
+  background: url(../img/ruble.png) 2px 0 no-repeat;
+}
+
+.of-weight {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.description {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+
+}
+
 .quick-show {
-  display: none;
+  position: absolute;
+  padding: 0 0 20px 0;
+  background-color: rgb(248, 247, 244);
+  opacity: 0.302;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.quick-show a {
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 22px;
+  padding: 10px 16px;
+  z-index: 2;
 }
 
 .about-shop {
   margin-bottom: 41px;
-  min-height: 305px;
-  outline: 1px solid black;
+}
+
+.ceo {
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-image: url(../img/wafer_pattern.jpg);
+}
+
+.ceo h2 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .blog-sender {
@@ -400,32 +517,96 @@ input[name=slider-controls] {
 }
 
 .box {
+  box-sizing: border-box;
   width: 560px;
-  min-height: 222px;
-  outline: 1px solid black;
+  height: 220px;
 }
 
 .blog {
   float: left;
+  position: relative;
+}
+
+.blog img {
+  border-radius: 15px;
+}
+
+.blog h2 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog a {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  width: 290px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .sender {
   float: right;
+  padding: 6px;
+  background: #f8f7f4;
+  background-image: url(../img/mail_pattern.png);
+  border-radius: 15px;
+}
+
+.sender-inner {
+  background: #f8f7f4;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 12px;
+}
+
+.sender-inner p {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+  margin-bottom: 36px;
+}
+
+.sender-inner input[type="text"] {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 9px 12px;
+  margin-right: 7px;
+  width: 340px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  margin-bottom: 14px;
+}
+
+.sender-inner input[type="submit"] {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 11px 19px;
+  border-radius: 22px;
 }
 
 .map {
   box-sizing: border-box;
   height: 428px;
   width: 1200px;
-  padding-top: 63px;
+  padding-top: 62px;
   padding-right: 27px;
   margin: 0 auto;
   background-image: url(../img/map.jpg);
 }
 
 .contacts {
-  width: 304px;
-  min-height: 305px;
+  width: 250px;
+  padding: 26px;
   margin-left: auto;
   outline: 1px solid red;
 }
