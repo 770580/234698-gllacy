@@ -11,12 +11,35 @@ body {
   clear: both;
 }
 
-.radio-slider {
+.btn {
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  -moz-transform: matrix( 1.04013375779322,0,0,1.04013375779322,0,0);
+  -webkit-transform: matrix( 1.04013375779322,0,0,1.04013375779322,0,0);
+  -ms-transform: matrix( 1.04013375779322,0,0,1.04013375779322,0,0);
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+input[name=slider-controls] {
   display: none;
 }
 
+#slide-ctrl-1:checked~.page-wrapper {
+  background-color: #849d8f;
+}
+#slide-ctrl-2:checked~.page-wrapper {
+  background-color: #8996a6;
+}
+#slide-ctrl-3:checked~.page-wrapper {
+  background-color: #9d8b84;
+}
+
 .page-wrapper {
-  background-color: #849D8F;
+  background-color: #849d8f;
 }
 
 .container {
@@ -59,6 +82,19 @@ body {
   display: block;
   padding: 8px 14px;
   color: #ffffff;
+  text-decoration: none;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.main-menu-item a:hover {
+  background: #f8f7f4;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-menu-item a:active {
+  box-shadow: inset 0 2px 1px 0 #696969;
 }
 
 .catalog-menu {
@@ -78,6 +114,7 @@ body {
 .cart-button {
   display: inline-block;
   vertical-align: middle;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -86,6 +123,7 @@ body {
 .search {
   width: 32px;
   height: 32px;
+  position: relative;
   float: left;
   margin-right: 10px;
   background: url(../img/search.png) no-repeat 50% 50%;
@@ -94,13 +132,43 @@ body {
   font-size: 0;
 }
 
+.search:hover {
+  background: url(../img/search_active.png) no-repeat 50% 50%;
+  background-color: #f8f7f4;
+}
+
+.search:hover .search-input {
+  display: block;
+}
+
 .search-input {
+  min-width: 310px;
+  position: absolute;
+  right: -2px;
+  top: 34px;
+  padding: 21px 16px;
+  background: #f8f7f4;
+  border-radius: 6px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   display: none;
+}
+
+.search-input input[type="text"] {
+  width: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .sign-in {
   float: left;
   margin-right: 10px;
+  position: relative;
 }
 
 .enter {
@@ -109,6 +177,7 @@ body {
   padding: 7px 16px;
   padding-left: 45px;
   color: #ffffff;
+  text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
 }
@@ -123,8 +192,46 @@ body {
   background: url(../img/signin.png) no-repeat 50% 50%;
 }
 
+.enter:hover {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.enter:hover::before {
+  background: url(../img/signin_active.png) no-repeat 50% 50%;
+}
+
 .sign-in-form {
+  min-width: 242px;
+  position: absolute;
+  right: -2px;
+  top: 34px;
+  padding: 20px 17px 22px 19px;
+  background: #f8f7f4;
+  border-radius: 6px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
   display: none;
+}
+
+.sign-in-form input[type="email"],
+.sign-in-form input[type="password"] {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+}
+
+.sign-in-submit {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 25px;
 }
 
 .cart-button {
@@ -138,6 +245,7 @@ body {
   padding: 7px 16px;
   padding-left: 45px;
   color: #ffffff;
+  text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
 }
@@ -172,6 +280,44 @@ body {
 .slider-wrapper {
   margin-bottom: 38px;
   min-height: 537px;
+}
+
+.slides {
+  position: relative;
+  display: none;
+  margin: 0 auto;
+  width: 690px;
+  height: 490px;
+}
+
+.sliders img {
+  position: absolute;
+  top: -45px;
+  left: 20px;
+  z-index: 0;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 562px;
+  left: 26px;
+  font-size: 0;
+  z-index: 100
+}
+
+.slider-buttons label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  vertical-align: top;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer
+}
+
+.slider-buttons label:hover {
+  background-color: rgba(255, 255, 255, .35)
 }
 
 .banners {

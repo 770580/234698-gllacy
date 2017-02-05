@@ -8,9 +8,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <input type="radio" name="point" id="slide1" class="radio-slider" checked>
-    <input type="radio" name="point" id="slide2" class="radio-slider">
-    <input type="radio" name="point" id="slide3" class="radio-slider">
+    <input type="radio" name="slider-controls" id="slide-ctrl-1" checked>
+    <input type="radio" name="slider-controls" id="slide-ctrl-2">
+    <input type="radio" name="slider-controls" id="slide-ctrl-3">
     <div class="page-wrapper">
       <header class="main-header container">
         <div class="clearfix">
@@ -52,7 +52,7 @@
               <span>поиск</span>
               <div class="search-input">
                 <form action="#" method="post">
-                  <input type="text" name="search-text" placeholder="Что ищем">
+                  <input type="text" name="search-text" placeholder="Что ищем?">
                 </form>
               </div>
             </div>
@@ -63,7 +63,7 @@
                   <input type="email" name="email" placeholder="Электронная почта">
                   <input type="password" name="password" placeholder="Пароль">
                   <div>
-                    <input type="submit" value="Войти">
+                    <input class="btn sign-in-submit" type="submit" value="Войти">
                   </div>
                   <div>
                     <a href="#">Забыли пароль?</a>
@@ -85,28 +85,25 @@
       <div class="slider-wrapper container">
         <div class="slider">
           <div class="slides slide1">
-            <div class="slide-descritpion">
-              <b>Крем-брюле и пломбир
-              с малиновым мороженным</b>
-            </div>
+            <img src="img/slider-pic-1.png" width="647" height="584" alt="Фото мороженое">
+            <span class="slide-descritpion">Крем-брюле и пломбир с малиновым джемом</span>
+            <a class="btn buy-both" href="#">Давайте оба!</a>
           </div>
           <div class="slides slide2">
-            <div class="slide-descritpion">
-              <b>Крем-брюле и пломбир
-              с малиновым мороженным</b>
-            </div>
+            <img src="img/slider-pic-2.png" width="647" height="584" alt="Фото мороженое">
+            <span class="slide-descritpion">Крем-брюле и пломбир с малиновым джемом</span>
+            <a class="btn buy-both" href="#">Давайте оба!</a>
           </div>
           <div class="slides slide3">
-            <div class="slide-descritpion">
-              <b>Крем-брюле и пломбир
-              с малиновым мороженным</b>
-            </div>
+            <img src="img/slider-pic-3.png" width="647" height="584" alt="Фото мороженое">
+            <span class="slide-descritpion">Крем-брюле и пломбир с малиновым джемом</span>
+            <a class="btn buy-both" href="#">Давайте оба!</a>
           </div>
         </div>
         <div class="slider-buttons">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
+          <label for="slide-ctrl-1"></label>
+          <label for="slide-ctrl-2"></label>
+          <label for="slide-ctrl-3"></label>
         </div>
         <div class="slider-link">
           <a href="#">Давайте оба!</a>
