@@ -135,7 +135,6 @@ input[name=slider-controls] {
 .cart-button {
   display: inline-block;
   vertical-align: middle;
-  font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -176,7 +175,6 @@ input[name=slider-controls] {
 
 .search-input input[type="text"] {
   width: 100%;
-  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -243,7 +241,6 @@ input[name=slider-controls] {
 .sign-in-form input[type="password"] {
   box-sizing: border-box;
   width: 100%;
-  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -266,7 +263,6 @@ input[name=slider-controls] {
   right: 17px;
   bottom: 22px;
   width: 120px;
-  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -470,7 +466,6 @@ input[name=slider-controls] {
 }
 
 .description {
-  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -506,7 +501,6 @@ input[name=slider-controls] {
 }
 
 .ceo h2 {
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
@@ -535,7 +529,6 @@ input[name=slider-controls] {
   position: absolute;
   top: 10px;
   left: 20px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -566,7 +559,6 @@ input[name=slider-controls] {
 }
 
 .sender-inner p {
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -575,7 +567,6 @@ input[name=slider-controls] {
 }
 
 .sender-inner input[type="text"] {
-  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -584,7 +575,7 @@ input[name=slider-controls] {
   width: 340px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .sender-inner input[type="submit"] {
@@ -605,39 +596,157 @@ input[name=slider-controls] {
 }
 
 .contacts {
-  width: 250px;
-  padding: 26px;
+  width: 252px;
+  padding: 28px 25px;
   margin-left: auto;
-  outline: 1px solid red;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 15px;
+}
+
+.address-block {
+  color: #323232;
+  margin-bottom: 17px;
+}
+
+.address-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.address {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.phone-block {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 22px;
+}
+
+.phone {
+  margin: 0;
+  margin-top: 5px;
+}
+
+.phone-number {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.order-timetable {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.feedback-button {
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  border-radius: 22px;
 }
 
 .main-footer {
-  margin-top: 23px;
+  margin-top: 20px;
+  color: #ffffff;
 }
 
 .social {
+  font-size: 0;
   width: 291px;
-  margin-right: 109px;
+  margin-top: 15px;
+  margin-right: 132px;
   float: left;
-  outline: 1px solid red;
+}
+
+.social-icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 12px;
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.icon-twitter {
+  background: url(../img/twitter.png) no-repeat;
+}
+
+.icon-instagram {
+  background: url(../img/instagram.png) no-repeat;
+}
+
+.icon-facebook {
+  background: url(../img/facebook.png) no-repeat;
+}
+
+.icon-vk {
+  background: url(../img/vk.png) 50% 50% no-repeat;
+}
+
+.link-info {
+  display: block;
 }
 
 .info-1 {
-  width: 162px;
+  position: relative;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  width: 142px;
   float: left;
-  outline: 1px solid black;
+}
+
+.info-1 a:first-child {
+  margin-bottom: 4px;
+}
+
+.info-1::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -22px;
+  width: 15px;
+  height: 13px;
+  background: url(../img/heart.png) no-repeat;
 }
 
 .info-2 {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
   width: 293px;
   float: left;
-  outline: 1px solid black;
+}
+
+.info-2 a:first-child {
+  margin-bottom: 4px;
 }
 
 .copyright {
-  width: 189px;
+  width: 190px;
   float: right;
-  outline: 1px solid black;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.made-in {
+  margin: 0;
 }
 
 .breadcrumbs {
