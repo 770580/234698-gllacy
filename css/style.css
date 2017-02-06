@@ -23,26 +23,52 @@ body {
 
 .link-bright {
   color: #ffffff;
+  text-decoration: none;
+}
+
+.link-bright span {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .link-bright:hover {
   color: #ffbc9e;
 }
 
+.link-bright:hover span {
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
 .link-bright:active {
   color: #ffbc9e;
 }
 
+.link-bright:active span {
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
 .link-dark {
-  color: #000000;
+  color: #323232;
+  text-decoration: none;
+}
+
+.link-dark span {
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
 }
 
 .link-dark:hover {
   color: #e84d37;
 }
 
+.link-dark:hover span {
+  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
+}
+
 .link-dark:active {
   color: #e84d37;
+}
+
+.link-dark:active span {
+  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
 input[name=slider-controls] {
