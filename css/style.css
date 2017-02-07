@@ -616,8 +616,10 @@ input[name=slider-controls] {
 }
 
 .ceo {
-  padding: 30px 20px;
+  padding: 25px 20px;
+  padding-bottom: 20px;
   border-radius: 15px;
+  color: #323232;
   background-image: url(../img/wafer_pattern.jpg);
 }
 
@@ -625,6 +627,72 @@ input[name=slider-controls] {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.ceo p {
+  font-weight: 400;
+  line-height: 22px;
+  padding-left: 57px;
+  margin-bottom: 4px;
+}
+
+.about-left {
+  position: relative;
+  float: left;
+  width: 483px;
+  padding-top: 1px;
+}
+
+.about-top-row .about-left::before {
+  content: "";
+
+  position: absolute;
+  left: 1px;
+  top: -14px;
+  width: 49px;
+  height: 49px;
+  background: url(../img/ice_cream.png);
+}
+
+.about-top-row .about-right::before {
+  content: "";
+
+  position: absolute;
+  left: 1px;
+  top: -14px;
+  width: 49px;
+  height: 49px;
+  background: url(../img/cow.png);
+}
+
+.about-bottom-row .about-left::before {
+  content: "";
+
+  position: absolute;
+  left: 1px;
+  top: -14px;
+  width: 49px;
+  height: 49px;
+  background: url(../img/leaflet.png);
+}
+
+.about-bottom-row .about-right::before {
+  content: "";
+
+  position: absolute;
+  left: 1px;
+  top: -14px;
+  width: 49px;
+  height: 49px;
+  background: url(../img/thermometer.png);
+}
+
+.about-right {
+  position: relative;
+  float: right;
+  width: 483px;
 }
 
 .blog-sender {
