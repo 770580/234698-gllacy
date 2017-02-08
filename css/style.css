@@ -75,18 +75,16 @@ input[name=slider-controls] {
   display: none;
 }
 
-#slide-ctrl-1:checked~.page-wrapper {
+#slide-ctrl-1:checked ~ .page-wrapper {
   background-color: #849d8f;
-}
-#slide-ctrl-2:checked~.page-wrapper {
-  background-color: #8996a6;
-}
-#slide-ctrl-3:checked~.page-wrapper {
-  background-color: #9d8b84;
 }
 
-.page-wrapper {
-  background-color: #849d8f;
+#slide-ctrl-2:checked ~ .page-wrapper {
+  background-color: #8996a6;
+}
+
+#slide-ctrl-3:checked ~ .page-wrapper {
+  background-color: #9d8b84;
 }
 
 .container {
@@ -403,31 +401,56 @@ input[name=slider-controls] {
 }
 
 .slider-wrapper {
-  margin-bottom: 38px;
-  min-height: 537px;
+  margin-bottom: 40px;
+  position: relative;
 }
 
 .slides {
   position: relative;
   display: none;
   margin: 0 auto;
+  padding-top: 317px;
   width: 690px;
-  height: 490px;
+  text-align: center;
+  color: #ffffff;
 }
 
-.sliders img {
+.slides img {
   position: absolute;
-  top: -45px;
-  left: 20px;
-  z-index: 0;
+  top: 8px;
+  left: 23px;
+}
+
+.slide-title {
+  position: relative;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 28px;
+}
+
+.buy-both {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 12px 43px;
+
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 41px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .slider-buttons {
   position: absolute;
-  top: 562px;
-  left: 26px;
+  top: 487px;
+  left: 27px;
   font-size: 0;
-  z-index: 100
 }
 
 .slider-buttons label {
@@ -443,6 +466,18 @@ input[name=slider-controls] {
 
 .slider-buttons label:hover {
   background-color: rgba(255, 255, 255, .35)
+}
+
+#slide-ctrl-1:checked ~ .page-wrapper #sld-1,
+#slide-ctrl-2:checked ~ .page-wrapper #sld-2,
+#slide-ctrl-3:checked ~ .page-wrapper #sld-3 {
+  display: block;
+}
+
+#slide-ctrl-1:checked ~ .page-wrapper label[for="slide-ctrl-1"],
+#slide-ctrl-2:checked ~ .page-wrapper label[for="slide-ctrl-2"],
+#slide-ctrl-3:checked ~ .page-wrapper label[for="slide-ctrl-3"] {
+  background-color: #ffffff;
 }
 
 .banners {
