@@ -1,24 +1,39 @@
 body {
+  margin: 0;
+
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  margin: 0;
 }
 
 .clearfix::after {
   content: "";
+
   display: table;
   clear: both;
 }
 
 .btn {
-  color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  color: #ffffff;
+  
+  background-image:    -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image:     -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   border: 0;
+}
+
+.btn:hover {
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+}
+
+.btn:active {
+  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 }
 
 .link-bright {
@@ -88,53 +103,57 @@ input[name=slider-controls] {
 }
 
 .container {
-  margin: 0 auto;
   width: 1148px;
+  margin: 0 auto;
   padding: 0 26px;
 }
 
 .logo {
+  float: left;
   width: 154px;
   height: 64px;
-  float: left;
   margin-top: 10px;
   margin-right: 10px;
 }
 
 .header-nav {
-  width: 600px;
-  padding: 19px 0;
   float: left;
+  width: 600px;
   margin-top: 4px;
+  padding: 19px 0;
 }
 
 .main-menu {
   margin: 0;
   padding: 0;
 
-  list-style: none;
   font-size: 0;
+  list-style: none;
 }
 
 .main-menu-item {
   display: inline-block;
-  vertical-align: middle;
+
   font-size: 16px;
   line-height: 18px;
+  vertical-align: middle;
 }
 
 .main-menu-link {
   display: block;
   padding: 8px 14px;
+
   color: #ffffff;
   text-decoration: none;
+
   border-radius: 16px;
 }
 
 .main-menu-link:hover {
-  background: #f8f7f4;
   color: #000000;
   text-decoration: none;
+
+  background: #f8f7f4;
 }
 
 .main-menu-link:active {
@@ -157,22 +176,26 @@ input[name=slider-controls] {
   position: absolute;
   top: 38px;
   left: -6px;
-  list-style: none;
+  z-index: 1;
+
+  display: none;
   width: 143px;
+  padding: 5px 0;
+
   font-size: 14px;
   line-height: 16px;
+
   background: #f8f7f4;
   border-radius: 6px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  padding: 5px 0;
-  display: none;
+  list-style: none;
 }
 
 .items-group {
-  padding-left: 20px;
+  margin-bottom: 3px;
   padding-top: 5px;
   padding-bottom: 7px;
-  margin-bottom: 3px;
+  padding-left: 20px;
 }
 
 .new-items-group {
@@ -200,18 +223,20 @@ input[name=slider-controls] {
 }
 
 .cross-border {
-  font-size: 0;
   height: 0px;
-  margin-left: 6px;
   margin-right: 10px;
   margin-bottom: 4px;
+  margin-left: 6px;
+
+  font-size: 0;
+
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .header-buttons {
+  float: right;
   width: 264px;
   margin-top: 23px;
-  float: right;
 
   font-size: 0;
 }
@@ -220,22 +245,26 @@ input[name=slider-controls] {
 .sign-in,
 .cart-button {
   display: inline-block;
-  vertical-align: middle;
+  
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 500;
+  vertical-align: middle;
 }
 
 .search {
+  position: relative;
+
+  float: left;
   width: 32px;
   height: 32px;
-  position: relative;
-  float: left;
   margin-right: 10px;
+
+  font-size: 0;
+  
   background: url(../img/search.png) no-repeat 50% 50%;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-  font-size: 0;
 }
 
 .search:hover {
@@ -248,59 +277,74 @@ input[name=slider-controls] {
 }
 
 .search-input {
-  min-width: 310px;
   position: absolute;
   right: -2px;
   top: 34px;
+
+  display: none;
+  width: 310px;
+  
   padding: 21px 16px;
+
   background: #f8f7f4;
   border-radius: 6px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  display: none;
+  
 }
 
 .search-input input[type="text"] {
+  box-sizing: border-box;
+
   width: 100%;
+  padding: 8px 12px;
+
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  padding: 8px 12px;
-  box-sizing: border-box;
+  
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
 
 .sign-in {
+  position: relative;
+
   float: left;
   margin-right: 10px;
-  position: relative;
 }
 
 .enter {
   position: relative;
+
   display: block;
   padding: 7px 16px;
   padding-left: 45px;
+
   color: #ffffff;
   text-decoration: none;
+
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
 }
 
 .enter::before {
   content: "";
+
   position: absolute;
   top: 6px;
   left: 17px;
+
   width: 21px;
   height: 19px;
+
   background: url(../img/signin.png) no-repeat 50% 50%;
 }
 
 .enter:hover {
-  background-color: #f8f7f4;
   color: #323232;
+
+  background-color: #f8f7f4;
 }
 
 .enter:hover::before {
@@ -312,37 +356,43 @@ input[name=slider-controls] {
 }
 
 .sign-in-form {
-  min-width: 242px;
   position: absolute;
-  right: -2px;
   top: 34px;
+  right: -2px;
+
+  display: none;
+  width: 242px;
   padding: 20px 17px 22px 19px;
+
   background: #f8f7f4;
   border-radius: 6px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-
-  display: none;
 }
 
 .sign-in-form input[type="email"],
 .sign-in-form input[type="password"] {
-  font-family: inherit;
   box-sizing: border-box;
+
   width: 100%;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+
+  font-family: inherit;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+
   border: 1px solid #d3d3d2;
   border-radius: 5px;
-  padding: 8px 12px;
-  margin-bottom: 20px;
 }
 
 .sign-in-submit {
+  padding: 10px 25px;
+
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  padding: 10px 25px;
+  
   border-radius: 20px;
   box-shadow: 0 1px 2px 0 #ac1000;
 }
@@ -351,7 +401,9 @@ input[name=slider-controls] {
   position: absolute;
   right: 17px;
   bottom: 22px;
+
   width: 120px;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -364,22 +416,28 @@ input[name=slider-controls] {
 
 .cart-link {
   position: relative;
+
   display: block;
   padding: 7px 16px;
   padding-left: 45px;
+
   color: #ffffff;
   text-decoration: none;
+
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
 }
 
 .cart-link::before {
   content: "";
+
   position: absolute;
   top: 6px;
   left: 17px;
+
   width: 21px;
   height: 19px;
+
   background: url(../img/cart.png) no-repeat 50% 50%;
 }
 
@@ -389,10 +447,11 @@ input[name=slider-controls] {
 
 .work-info {
   float: right;
-  text-align: right;
-  color: #ffffff;
+
   font-size: 14px;
   line-height: 16px;
+  color: #ffffff;
+  text-align: right;
 }
 
 .phone{
@@ -401,18 +460,21 @@ input[name=slider-controls] {
 }
 
 .slider-wrapper {
-  margin-bottom: 40px;
   position: relative;
+
+  margin-bottom: 40px;
 }
 
 .slides {
   position: relative;
+
   display: none;
   margin: 0 auto;
   padding-top: 317px;
   width: 690px;
-  text-align: center;
+
   color: #ffffff;
+  text-align: center;
 }
 
 .slides img {
@@ -423,16 +485,18 @@ input[name=slider-controls] {
 
 .slide-title {
   position: relative;
+
+  margin-bottom: 28px;
+
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  margin-bottom: 28px;
 }
 
 .buy-both {
   position: relative;
+
   display: inline-block;
-  vertical-align: top;
   padding: 12px 43px;
 
   font-weight: 700;
@@ -450,6 +514,7 @@ input[name=slider-controls] {
   position: absolute;
   top: 487px;
   left: 27px;
+
   font-size: 0;
 }
 
@@ -458,7 +523,9 @@ input[name=slider-controls] {
   width: 17px;
   height: 17px;
   margin-right: 8px;
+
   vertical-align: top;
+
   border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer
@@ -485,9 +552,11 @@ input[name=slider-controls] {
 }
 
 .banner {
+  position: relative;
+
   width: 560px;
   height: 230px;
-  position: relative;
+
   color: #ffffff;
 }
 
@@ -495,26 +564,32 @@ input[name=slider-controls] {
   position: absolute;
   top: -12px;
   left: 20px;
+
   font-size: 35px;
   line-height: 41px;
 }
 
 .banner p {
   position: absolute;
-  left: 20px;
   top: 54px;
+  left: 20px;
+
   width: 520px;
+
   font-size: 18px;
   line-height: 22px;
 }
 
 .banner a {
   position: absolute;
-  bottom: 24px;
   right: 20px;
+  bottom: 24px;
+
+  padding: 11px 25px;
+
   font-size: 18px;
   line-height: 24px;
-  padding: 11px 25px;
+
   border-radius: 23px;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
@@ -533,13 +608,15 @@ input[name=slider-controls] {
 
 .cards-list {
   padding: 0;
+
   list-style-type: none;
 }
 
 .cards-item {
   position: relative;
-  width: 267px;
+
   float: left;
+  width: 267px;
   margin-right: 26px;
 }
 
@@ -561,37 +638,45 @@ input[name=slider-controls] {
 
 .cards-image {
   position: relative;
-  margin-bottom: 10px;
   z-index: 1;
+
+  margin-bottom: 10px;
 }
 
 .cards-image::before {
   content: "";
+
   position: absolute;
-  left: -13px;
   top: -6px;
-  border-radius: 5px;
-  background-color: rgb(248, 247, 244);
-  opacity: 0;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  left: -13px;
+  z-index: -1;
+
   width: 293px;
   height: 405px;
-  z-index: -1;
+
+  background-color: rgb(248, 247, 244);
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  opacity: 0;
 }
 
 .cards-image-hit::after {
   content: "";
+
   position: absolute;
   top: 0px;
   left: 0px;
+
   width: 61px;
   height: 61px;
+
   background: url(../img/hit.png) no-repeat;
 }
 
 .price {
   position: absolute;
   bottom: 1px;
+
   font-size: 45px;
   line-height: 45px;
   color: #ffffff;
@@ -599,18 +684,23 @@ input[name=slider-controls] {
 }
 
 .ruble {
-  font-size: 0;
   position: relative;
+
   margin-right: 14px;
+
+  font-size: 0;
 }
 
 .ruble:before {
-  position: absolute;
   content: "";
-  left: -10px;
+
+  position: absolute;
   bottom: -3px;
+  left: -10px;
+
   width: 31px;
   height: 36px;
+
   background: url(../img/ruble.png) 2px 0 no-repeat;
 }
 
@@ -620,30 +710,36 @@ input[name=slider-controls] {
 }
 
 .description {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
-  text-align: center;
-  display: block;
   position: relative;
   z-index: 2;
+
+  display: block;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
 }
 
 .quick-show {
   position: absolute;
+  z-index: 10;
   bottom: -62px;
+
+  display: none;  
   width: 267px;
   padding: 0 0 20px 0;
+
   text-align: center;
-  z-index: 10;
-  display: none;
 }
 
 .quick-show a {
+  padding: 14px 17px;
+
   font-size: 18px;
   line-height: 24px;
+
   border-radius: 22px;
-  padding: 14px 17px;
 }
 
 .about-shop {
@@ -653,28 +749,33 @@ input[name=slider-controls] {
 .ceo {
   padding: 25px 20px;
   padding-bottom: 20px;
-  border-radius: 15px;
+
   color: #323232;
+
   background-image: url(../img/wafer_pattern.jpg);
+  border-radius: 15px;
 }
 
 .ceo h2 {
+  margin: 0;
+  margin-bottom: 7px;
+
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
-  margin: 0;
-  margin-bottom: 7px;
 }
 
 .ceo p {
+  margin-bottom: 4px;
+  padding-left: 57px;
+
   font-weight: 400;
   line-height: 22px;
-  padding-left: 57px;
-  margin-bottom: 4px;
 }
 
 .about-left {
   position: relative;
+
   float: left;
   width: 483px;
   padding-top: 1px;
@@ -684,10 +785,12 @@ input[name=slider-controls] {
   content: "";
 
   position: absolute;
-  left: 1px;
   top: -14px;
+  left: 1px;
+
   width: 49px;
   height: 49px;
+
   background: url(../img/ice_cream.png);
 }
 
@@ -695,10 +798,12 @@ input[name=slider-controls] {
   content: "";
 
   position: absolute;
-  left: 1px;
   top: -14px;
+  left: 1px;
+
   width: 49px;
   height: 49px;
+
   background: url(../img/cow.png);
 }
 
@@ -706,10 +811,12 @@ input[name=slider-controls] {
   content: "";
 
   position: absolute;
-  left: 1px;
   top: -14px;
+  left: 1px;
+
   width: 49px;
   height: 49px;
+
   background: url(../img/leaflet.png);
 }
 
@@ -717,15 +824,18 @@ input[name=slider-controls] {
   content: "";
 
   position: absolute;
-  left: 1px;
   top: -14px;
+  left: 1px;
+
   width: 49px;
   height: 49px;
+
   background: url(../img/thermometer.png);
 }
 
 .about-right {
   position: relative;
+
   float: right;
   width: 483px;
 }
@@ -736,13 +846,15 @@ input[name=slider-controls] {
 
 .box {
   box-sizing: border-box;
+
   width: 560px;
   height: 220px;
 }
 
 .blog {
-  float: left;
   position: relative;
+
+  float: left;
 }
 
 .blog img {
@@ -753,6 +865,7 @@ input[name=slider-controls] {
   position: absolute;
   top: 10px;
   left: 20px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -770,89 +883,103 @@ input[name=slider-controls] {
 .sender {
   float: right;
   padding: 6px;
+
   background: #f8f7f4;
   background-image: url(../img/mail_pattern.png);
   border-radius: 15px;
 }
 
 .sender-inner {
-  background: #f8f7f4;
-  border-radius: 10px;
   padding: 20px;
   padding-top: 12px;
+
+  background: #f8f7f4;
+  border-radius: 10px;
 }
 
 .sender-inner p {
+  margin-bottom: 36px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
-  margin-bottom: 36px;
 }
 
 .sender-inner input[type="text"] {
+  width: 340px;
+  margin-right: 7px;
+  margin-bottom: 13px;
+  padding: 9px 12px;
+
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  padding: 9px 12px;
-  margin-right: 7px;
-  width: 340px;
+
   border: 1px solid #d3d3d2;
   border-radius: 5px;
-  margin-bottom: 13px;
 }
 
 .sender-inner input[type="submit"] {
+  padding: 11px 19px;
+
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  padding: 11px 19px;
+
   border-radius: 22px;
 }
 
 .map {
   box-sizing: border-box;
-  height: 428px;
+
   width: 1200px;
+  height: 428px;
+  margin: 0 auto;
   padding-top: 62px;
   padding-right: 27px;
-  margin: 0 auto;
+
   background-image: url(../img/map.jpg);
 }
 
 .contacts {
   width: 252px;
-  padding: 28px 25px;
   margin-left: auto;
+  padding: 28px 25px;
+  
   background-color: rgba(255, 255, 255, 0.98);
   border-radius: 15px;
 }
 
 .address-block {
-  color: #323232;
   margin-bottom: 17px;
+
+  color: #323232;
 }
 
 .address-title {
+  margin: 0;
+  margin-bottom: 2px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin: 0;
-  margin-bottom: 2px;
 }
 
 .address {
+  margin: 0;
+
   font-size: 18px;
   line-height: 24px;
-  margin: 0;
 }
 
 .phone-block {
+  margin-bottom: 22px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 22px;
 }
 
 .phone {
@@ -873,34 +1000,40 @@ input[name=slider-controls] {
 }
 
 .feedback-button {
-  width: 100%;
   display: block;
-  font-size: 18px;
-  line-height: 24px;
+  width: 100%;
   padding-top: 8px;
   padding-bottom: 12px;
+
+  font-size: 18px;
+  line-height: 24px;
+
   border-radius: 22px;
 }
 
 .main-footer {
   margin-top: 20px;
+
   color: #ffffff;
 }
 
 .social {
-  font-size: 0;
+  float: left;
   width: 291px;
   margin-top: 15px;
   margin-right: 132px;
-  float: left;
+
+  font-size: 0;
 }
 
 .social-icon {
   display: inline-block;
-  vertical-align: top;
-  margin-right: 12px;
   width: 32px;
   height: 32px;
+  margin-right: 12px;
+
+  vertical-align: top;
+
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
@@ -918,7 +1051,7 @@ input[name=slider-controls] {
 }
 
 .icon-vk {
-  background: url(../img/vk.png) 50% 50% no-repeat;
+  background: url(../img/vk.png) no-repeat;
 }
 
 .link-info {
@@ -927,12 +1060,14 @@ input[name=slider-controls] {
 
 .info-1 {
   position: relative;
+
+  float: left;
+  width: 142px;
   margin-top: 15px;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  width: 142px;
-  float: left;
 }
 
 .info-1 a:first-child {
@@ -941,21 +1076,25 @@ input[name=slider-controls] {
 
 .info-1::before {
   content: "";
+
   position: absolute;
   top: 3px;
   left: -22px;
+
   width: 15px;
   height: 13px;
+
   background: url(../img/heart.png) no-repeat;
 }
 
 .info-2 {
+  float: left;
+  width: 293px;
   margin-top: 15px;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  width: 293px;
-  float: left;
 }
 
 .info-2 a:first-child {
@@ -963,12 +1102,13 @@ input[name=slider-controls] {
 }
 
 .copyright {
-  width: 191px;
   float: right;
+  width: 191px;
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  margin-bottom: 30px;
 }
 
 .made-in {
