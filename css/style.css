@@ -261,7 +261,7 @@ input[name=slider-controls] {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .search {
@@ -324,7 +324,7 @@ input[name=slider-controls] {
   position: relative;
 
   float: left;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .enter {
@@ -424,7 +424,7 @@ input[name=slider-controls] {
 
 .cart-button {
   float: right;
-  width: 118px
+  width: 120px
 }
 
 .cart-link {
@@ -434,14 +434,19 @@ input[name=slider-controls] {
   padding: 7px 16px;
   padding-left: 45px;
 
-  color: #ffffff;
   text-decoration: none;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
 }
 
-.cart-link::before {
+.cart-empty {
+  position: relative;
+
+  color: #ffffff;
+}
+
+.cart-empty::before {
   content: "";
 
   position: absolute;
@@ -452,6 +457,25 @@ input[name=slider-controls] {
   height: 19px;
 
   background: url(../img/cart.png) no-repeat 50% 50%;
+}
+
+.cart-with-items {
+  position: relative;
+
+  color: #000000;
+}
+
+.cart-with-items::before {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 17px;
+
+  width: 21px;
+  height: 19px;
+
+  background: url(../img/cart_active.png) no-repeat 50% 50%;
 }
 
 .cart {
@@ -561,7 +585,7 @@ input[name=slider-controls] {
 }
 
 .banners {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .banner {
@@ -632,10 +656,6 @@ input[name=slider-controls] {
   float: right;
 }
 
-.hits {
-  margin-bottom: 35px;
-}
-
 .cards-list {
   padding: 0;
 
@@ -648,14 +668,15 @@ input[name=slider-controls] {
   float: left;
   width: 267px;
   margin-right: 26px;
+  margin-bottom: 37px;
 }
 
 .cards-item:nth-child(4n) {
   margin-right: 0;
 }
 
-.cards-item:hover .cards-image::before {
-  opacity: 0.302;
+.cards-item:hover {
+  z-index: 1;
 }
 
 .cards-item:hover .quick-show {
@@ -668,18 +689,16 @@ input[name=slider-controls] {
 
 .cards-image {
   position: relative;
-  z-index: 1;
 
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
-.cards-image::before {
+.cards-item::before {
   content: "";
 
   position: absolute;
   top: -6px;
   left: -13px;
-  z-index: -1;
 
   width: 293px;
   height: 405px;
@@ -688,6 +707,10 @@ input[name=slider-controls] {
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   opacity: 0;
+}
+
+.cards-item:hover::before {
+  opacity: 0.302;
 }
 
 .cards-image-hit::after {
@@ -741,7 +764,6 @@ input[name=slider-controls] {
 
 .description {
   position: relative;
-  z-index: 2;
 
   display: block;
 
@@ -753,8 +775,7 @@ input[name=slider-controls] {
 
 .quick-show {
   position: absolute;
-  z-index: 10;
-  bottom: -62px;
+  top: 344px;
 
   display: none;
   width: 267px;
@@ -773,6 +794,7 @@ input[name=slider-controls] {
 }
 
 .about-shop {
+  margin-top: -15px;
   margin-bottom: 41px;
 }
 
@@ -788,7 +810,7 @@ input[name=slider-controls] {
 
 .ceo h2 {
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 4px;
 
   font-weight: 500;
   font-size: 24px;
@@ -815,7 +837,7 @@ input[name=slider-controls] {
   content: "";
 
   position: absolute;
-  top: -14px;
+  top: -13px;
   left: 1px;
 
   width: 49px;
@@ -828,7 +850,7 @@ input[name=slider-controls] {
   content: "";
 
   position: absolute;
-  top: -14px;
+  top: -13px;
   left: 1px;
 
   width: 49px;
@@ -841,7 +863,7 @@ input[name=slider-controls] {
   content: "";
 
   position: absolute;
-  top: -14px;
+  top: -13px;
   left: 1px;
 
   width: 49px;
@@ -854,7 +876,7 @@ input[name=slider-controls] {
   content: "";
 
   position: absolute;
-  top: -14px;
+  top: -13px;
   left: 1px;
 
   width: 49px;
@@ -871,7 +893,7 @@ input[name=slider-controls] {
 }
 
 .blog-sender {
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
 .box {
@@ -928,7 +950,7 @@ input[name=slider-controls] {
 }
 
 .sender-inner p {
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 
   font-weight: 400;
   font-size: 16px;
