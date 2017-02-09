@@ -80,30 +80,29 @@
           <div class="cart-button">
             <a class="cart-link cart-with-items" href="#">2 товара</a>
             <div class="cart">
-              <div class="cart-list">
-                <table>
-                  <tr>
-                    <td>x</td>
-                    <td><img src="#" alt="Пломбир с апельсиновым джемом"></td>
-                    <td>Пломбир с апельсиновым джемом</td>
-                    <td>1,5 кг х <span>200 руб.</span>span></td>
-                    <td>300 руб.</td>
-                  </tr>
-                  <tr>
-                    <td>x</td>
-                    <td><img src="#" alt="Клубничный пломбир
-                    с присыпкой из белого шоколада"></td>
-                    <td>Пломбир с апельсиновым джемом</td>
-                    <td>1,5 кг х <span>300 руб.</span>span></td>
-                    <td>450 руб.</td>
-                  </tr>
-                </table>
-              </div>
+              <table class="cart-list">
+                <tr class="cart-list-row">
+                  <td class="remove-item">&#10005;</td>
+                  <td class="item-image"><img src="img/item1_mini.png" width="33" height="33"></td>
+                  <td class="item-title">Пломбир с апельсиновым джемом</td>
+                  <td class="item-price">1,5 кг х <span>200 руб.</span></td>
+                  <td class="item-total">300 руб.</td>
+                </tr>
+                <tr class="cart-list-row">
+                  <td class="remove-item">&#10005;</td>
+                  <td class="item-image"><img src="img/item3_mini.png" width="33" height="33"></td>
+                  <td class="item-title">Клубничный пломбир
+                  с присыпкой из белого шоколада</td>
+                  <td class="item-price">1,5 кг х <span>300 руб.</span></td>
+                  <td class="item-total">450 руб.</td>
+                </tr>
+              </table>
+              <hr class="cart-horizontal-line">
               <div class="sum">
                 Итого: 750 руб.
               </div>
               <div class="make-order">
-                <a href="#">Оформить заказ</a>
+                <a class="btn btn-make-order" href="#">Оформить заказ</a>
               </div>
             </div>
           </div>
@@ -486,7 +485,7 @@
           <div class="copyright">
             <img src="img/logo_academy.png" width="108" height="38" alt="HTML Academy">
             <p class="made-in">
-              Сделано в 
+              Сделано в
               <a class="link-bright" href="#">
                 <span>HTML Academy<span>
               </a> &copy; 2017
