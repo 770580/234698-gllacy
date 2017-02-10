@@ -115,13 +115,17 @@
       </div>
     </header>
     <div class="breadcrumbs container">
-      <a href="index.html">Главная</a>
-      <span>&#187;</span>
-      <a href="catalog.html">Каталог</a>
-      <span>&#187;</span>
-      <a href="#">Сливочное</a>
+      <a class="link-bright breadcrumb" href="index.html">
+        <span>Главная
+      </a>
+      <a class="link-bright breadcrumb" href="catalog.html">
+        <span>Каталог</span>
+      </a>
+      <a class="link-bright breadcrumb" href="catalog.html">
+        <span>Сливочное</span>
+      </a>
     </div>
-    <div class="catalog-section container">
+    <div class="catalog-title container">
       <h1>Сливочное мороженое</h1>
     </div>
     <div class="filter">
@@ -424,11 +428,11 @@
         </ul>
         <div class="pagination">
           <ul class="pagination-points">
-            <li class="pagination-arrow">
-              &#60;
+            <li class="pagination-point disabled-arrow">
+              <a href="#">&#60;</a>
             </li>
-            <li class="pagination-point">
-              <a class="pagination-active" href="#">1</a>
+            <li class="pagination-point active-point">
+              <a class="active-point" href="#">1</a>
             </li>
             <li class="pagination-point">
               <a href="#">2</a>
@@ -442,8 +446,8 @@
             <li class="pagination-point">
               <a href="#">5</a>
             </li>
-            <li class="pagination-arrow">
-              &#62;
+            <li class="pagination-point">
+              <a href="#">&#62;</a>
             </li>
           </ul>
         </div>
