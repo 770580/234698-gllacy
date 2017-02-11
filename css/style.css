@@ -1340,7 +1340,7 @@ input[name=slider-controls] {
 }
 
 .catalog-title {
-  margin-bottom: 21px;
+  margin-bottom: 25px;
 }
 
 .catalog-title h1 {
@@ -1352,13 +1352,27 @@ input[name=slider-controls] {
 }
 
 .filter {
-  margin-bottom: 16px;
+  margin-bottom: 28px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   vertical-align: top;
   color: #ffffff;
+}
+
+.filter fieldset {
+  margin: 0;
+  margin-right: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.filter legend {
+  margin-left: 17px;
+
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .form-sort {
@@ -1369,12 +1383,7 @@ input[name=slider-controls] {
   border: none;
 }
 
-.form-sort legend {
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.filter select {
+.form-sort select {
   width: 193px;
   height: 36px;
   padding-left: 16px;
@@ -1399,6 +1408,86 @@ input[name=slider-controls] {
   border: none;
 }
 
+.range-controls {
+  position: relative;
+
+  width: 188px;
+  height: 19px;
+  margin-top: -4px;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.range-controls .scale {
+  height: 4px;
+  background: rgba(248, 247, 244, 0.2);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 4px;
+
+  background: #f8f7f4;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  background: #f8f7f4;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.range-controls .toggle:hover {
+  top: 6px;
+
+  width: 24px;
+  height: 24px;
+}
+
+
+.range-controls .toggle-min {
+  left: 37px;
+}
+
+.range-controls .toggle-max {
+  left: 135px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.price-controls input {
+  width: 32px;
+  padding: 0 0px;
+
+  font-family: inherit;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+
+  border: none;
+  background: rgba(255, 255, 255, 0);
+}
+
 .fatness {
   display: inline-block;
 
@@ -1407,12 +1496,8 @@ input[name=slider-controls] {
   border: none;
 }
 
-.fatness legend {
-  margin-left: 30px;
-}
-
 .fatness-items {
-  padding: 9px 16px;
+  padding: 9px 0 9px 16px;
 
   background: rgba(225, 255, 255, 0.2);
   border-radius: 18px;
@@ -1421,10 +1506,11 @@ input[name=slider-controls] {
 .fatness-item {
   position: relative;
 
-  padding-left: 30px;
+  padding-left: 32px;
+  padding-right: 14px;
 }
 
-.fatness-item input[type="radio"] {
+.fatness-item .radio-fatness {
   display: none;
 }
 
@@ -1442,16 +1528,24 @@ input[name=slider-controls] {
   background-position: -160px -119px;
 }
 
-.fatness-item input[type="radio"]:checked + label::before {
+.radio-fatness[disabled] + label::before {
+  opacity: 0.4;
+}
+
+.radio-fatness:checked + label::before {
   background-position: -131px -161px;
 }
 
-.fatness-item:hover label::before {
+.fatness-item:hover .radio-fatness:not([disabled]) label::before {
   background-position: -201px -119px;
 }
 
-.fatness-item:hover input[type="radio"]:checked + label::before {
+.fatness-item:hover .radio-fatness:checked:not([disabled]) + label::before {
   background-position: -172px -161px;
+}
+
+.form-first-line {
+  margin-bottom: 5px;
 }
 
 .fillers {
@@ -1462,29 +1556,26 @@ input[name=slider-controls] {
   border: none;
 }
 
-.fillers legend {
-  margin-left: 30px;
-}
-
 .fillers-items {
-  padding: 9px 16px;
+  padding: 9px 0 9px 16px;
 
   background: rgba(225, 255, 255, 0.2);
   border-radius: 18px;
 }
 
-.fillers-item input[type="checkbox"] {
+.fillers-item .checkbox-fillers {
   display: none;
 }
 
 .fillers-item {
   position: relative;
 
-  padding-left: 30px;
+  padding-left: 32px;
+  padding-right: 16px;
 }
 
 .fillers-item label::before {
-  content: " ";
+  content: "";
 
   position: absolute;
   top: 0;
@@ -1497,22 +1588,26 @@ input[name=slider-controls] {
   background-position: -92px -10px;
 }
 
-.fillers-item input[type="checkbox"]:checked + label::before {
+.checkbox-fillers[disabled] + label::before {
+  opacity: 0.4;
+}
+
+.fillers-item .checkbox-fillers:checked + label::before {
   background-position: -172px -10px;
 }
 
-.fillers-item:hover label::before {
+.fillers-item:hover .checkbox-fillers:not([disabled]) label::before {
   background-position: -132px -10px;
 }
 
-.fillers-item:hover input[type="checkbox"]:checked + label::before {
+.fillers-item:hover .checkbox-fillers:checked:not([disabled]) + label::before {
   background-position: -212px -10px;
 }
 
 .form-submit {
   display: inline-block;
-  margin-top: 19px;
-  padding: 9px 30px;
+  margin-top: 22px;
+  padding: 7px 28px;
 
   vertical-align: top;
   color: #ffffff;
