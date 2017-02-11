@@ -130,14 +130,14 @@
     </div>
     <div class="filter">
       <div class="container">
-        <form action="#" method="post">
+        <form action="#" method="get">
           <div class="form-first-line">
             <fieldset class="form-sort">
               <legend>Сортировка:</legend>
               <select name="sort">
                 <option value="popular" selected>по популярности</option>
                 <option value="cheap">сначала недорогие</option>
-                <option value="expensive">сначала доргие</option>
+                <option value="expensive">сначала дорогие</option>
                 <option value="fatness">по жирности</option>
               </select>
             </fieldset>
@@ -149,55 +149,53 @@
             </fieldset>
             <fieldset class="fatness">
               <legend>Жирность:</legend>
-              <div class="fatness-value">
-                <label>
-                  <input type="radio" name="fatness" value="zero">
-                  0%
-                </label>
-                <label>
-                  <input type="radio" name="fatness" value="less-ten">
-                  до 10%
-                </label>
-                <label>
-                  <input type="radio" name="fatness" value="less-thirty">
-                  до 30%
-                </label>
-                <label>
-                  <input type="radio" name="fatness" value="more-thirty">
-                  выше 30%
-                </label>
+              <div class="fatness-items">
+                <span class="fatness-item">
+                  <input id="radio-fatness-1" type="radio" name="fatness" value="zero">
+                  <label for="radio-fatness-1">0%</label>
+                </span>
+                <span class="fatness-item">
+                  <input id="radio-fatness-2" type="radio" name="fatness" value="less-ten">
+                  <label for="radio-fatness-2">до 10%</label>
+                </span>
+                <span class="fatness-item">
+                  <input id="radio-fatness-3" type="radio" name="fatness" value="less-thirty">
+                  <label for="radio-fatness-3">до 30%</label>
+                </span>
+                <span class="fatness-item">
+                  <input id="radio-fatness-4" type="radio" name="fatness" value="more-thirty">
+                  <label for="radio-fatness-4">выше 30%</label>
+                </span>
               </div>
             </fieldset>
           </div>
           <div class="form-second-line">
             <fieldset class="fillers">
               <legend>Наполнители:</legend>
-              <div class="fillers-value">
-                <label>
-                  <input type="checkbox" name="chocolate">
-                  шоколадные
-                </label>
-                <label>
-                  <input type="checkbox" name="sugar">
-                  сахарные присыпки
-                </label>
-                <label>
-                  <input type="checkbox" name="fruit">
-                  фрукты
-                </label>
-                <label>
-                  <input type="checkbox" name="syrup">
-                  сиропы
-                </label>
-                <label>
-                  <input type="checkbox" name="jam">
-                  джемы
-                </label>
+              <div class="fillers-items">
+                <span class="fillers-item">
+                  <input id="checkbox-fatness-1" type="checkbox" name="chocolate">
+                  <label for="checkbox-fatness-1">шоколадные</label>
+                </span>
+                <span class="fillers-item">
+                  <input id="checkbox-fatness-2" type="checkbox" name="sugar">
+                  <label for="checkbox-fatness-2">сахарные присыпки</label>
+                </span>
+                <span class="fillers-item">
+                  <input id="checkbox-fatness-3" type="checkbox" name="fruit">
+                  <label for="checkbox-fatness-3">фрукты</label>
+                </span>
+                <span class="fillers-item">
+                  <input id="checkbox-fatness-4" type="checkbox" name="syrup">
+                  <label for="checkbox-fatness-4">сиропы</label>
+                </span>
+                <span class="fillers-item">
+                  <input id="checkbox-fatness-5" type="checkbox" name="jam">
+                  <label for="checkbox-fatness-5">джемы</label>
+                </span>
               </div>
             </fieldset>
-            <div class="form-sumbit">
-              <input type="submit" value="Применить">
-            </div>
+            <input class="form-submit" type="submit" value="Применить">
           </div>
         </form>
       </div>
@@ -428,11 +426,11 @@
         </ul>
         <div class="pagination">
           <ul class="pagination-points">
-            <li class="pagination-point disabled-arrow">
+            <li class="pagination-point pagination-arrow">
               <a href="#">&#60;</a>
             </li>
             <li class="pagination-point active-point">
-              <a class="active-point" href="#">1</a>
+              <a href="#">1</a>
             </li>
             <li class="pagination-point">
               <a href="#">2</a>
@@ -446,7 +444,7 @@
             <li class="pagination-point">
               <a href="#">5</a>
             </li>
-            <li class="pagination-point">
+            <li class="pagination-point pagination-arrow">
               <a href="#">&#62;</a>
             </li>
           </ul>
