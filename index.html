@@ -61,7 +61,8 @@
               <span class="search-button">поиск</span>
               <div class="search-input">
                 <form action="#" method="post">
-                  <input type="text" name="search-text" placeholder="Что ищем?">
+                  <input class="search-text" id="search-text" type="text" name="search-text" required>
+                  <label class="placeholder-header" for="search-text">Что ищем?</label>
                 </form>
               </div>
             </div>
@@ -69,9 +70,11 @@
               <a class="enter" href="#">Вход</a>
               <div class="sign-in-form">
                 <form action="#" method="post">
-                  <input type="email" name="email" placeholder="Электронная почта">
-                  <input type="password" name="password" placeholder="Пароль">
-                  <input class="btn sign-in-submit" type="submit" value="Войти">
+                  <input class="sign-in-email" id="sign-in-email" type="text" name="email" required>
+                  <label class="placeholder-header" for="sign-in-email">Электронная почта</label>
+                  <input class="sign-in-password" id="sign-in-password" type="password" name="password" required>
+                  <label class="placeholder-header" for="sign-in-password">Пароль</label>
+                  <button class="btn sign-in-submit">Войти</button>
                   <div class="sign-in-links">
                     <a class="link-dark" href="#">Забыли пароль?</a>
                     <a class="link-dark" href="#">Новая регистрация</a>
@@ -277,7 +280,8 @@
                 слать всякой ненужной ерунды. Честно =)
               </p>
               <form action="#" method="post">
-                <input type="text" name="email" placeholder="Электронная почта">
+                <input class="sender-email" id="sender-email" type="text" name="email" required>
+                <label class="placeholder-sender" for="sender-email">Электронная почта</label>
                 <input class="btn" type="submit" value="Отправить">
               </form>
             </div>
