@@ -31,7 +31,7 @@
                     Разделитель
                   </li>
                   <li class="items-group">
-                    <a href="#">Сливочное</a>
+                    <a href="catalog.html">Сливочное</a>
                   </li>
                   <li class="items-group">
                     <a href="#">Щербеты</a>
@@ -58,7 +58,7 @@
           </nav>
           <div class="header-buttons">
             <div class="search">
-              <span>поиск</span>
+              <span class="search-button">поиск</span>
               <div class="search-input">
                 <form action="#" method="post">
                   <input type="text" name="search-text" placeholder="Что ищем?">
@@ -93,9 +93,7 @@
         <div class="slider">
           <div class="slides" id="slide-1">
             <img src="img/slider-pic-1.png" width="647" height="584" alt="Фото мороженое">
-            <div class="slide-title">
-              Крем-брюле и пломбир с малиновым джемом
-            </div>
+            <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
             <a class="btn buy-both" href="#">Давайте оба!</a>
           </div>
           <div class="slides" id="slide-2">
@@ -119,7 +117,7 @@
         <div class="container clearfix">
           <div class="banner banner-left">
             <h2>Малинка даром!</h2>
-            <img src="img/raspberries.png" width="560" width="229" alt="Малинка даром!">
+            <img src="img/raspberries.png" width="560" height="229" alt="Малинка даром!">
             <p>При покупке 2 кг любого фруктового
             мороженого, добавим в ваш заказ банку
             малинового варенья бесплатно.</p>
@@ -127,7 +125,7 @@
           </div>
           <div class="banner banner-right">
             <h2>Шоколадки даром!</h2>
-            <img src="img/chocolate.png" width="560" width="229" alt="Малинка даром!">
+            <img src="img/chocolate.png" width="560" height="229" alt="Малинка даром!">
             <p>При покупке 2 кг пломбира, добавим в ваш
             заказ упаковку вкуснейшей шоколадной
             присыпки совершенно бесплатно.</p>
@@ -352,12 +350,21 @@
             <p class="made-in">
               Сделано в
               <a class="link-bright" href="#">
-                <span>HTML Academy<span>
+                <span>HTML Academy</span>
               </a> &copy; 2017
             </p>
           </div>
         </div>
       </footer>
+      <div class="feedback">
+        <h2>Мы обязательно вам ответим!</h2>
+        <form action="post">
+          <input type="text" name="name" placeholder="Как вас зовут?">
+          <input type="email" name="email" placeholder="Ваша почта для ответа?">
+          <textarea name="text" placeholder="Напишите что нибудь..."></textarea>
+          <input type="submit" value="Отправить">
+        </form>
+      </div>
     </div>
   </body>
 </html>

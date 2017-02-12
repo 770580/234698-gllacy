@@ -8,6 +8,14 @@ body {
   background-color: #849d8f;
 }
 
+button,
+a,
+input,
+textarea,
+select {
+  outline: none;
+}
+
 .clearfix::after {
   content: "";
 
@@ -158,6 +166,7 @@ input[name=slider-controls] {
 
 .main-menu-item {
   display: inline-block;
+  padding-bottom: 10px;
 
   font-size: 16px;
   line-height: 18px;
@@ -187,7 +196,6 @@ input[name=slider-controls] {
 
 .menu-item-active {
   background: #d07058;
-
 }
 
 .menu-item-active span {
@@ -238,7 +246,7 @@ input[name=slider-controls] {
   padding-bottom: 7px;
 }
 
-.items-group:hover {
+.items-group:not(.items-group-active):hover {
   background-color: #fbded7;
 }
 
@@ -283,6 +291,13 @@ input[name=slider-controls] {
   font-size: 0;
 }
 
+.placeholder-header {
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+  opacity: 0.52;
+}
+
 .search,
 .sign-in,
 .cart-button {
@@ -298,9 +313,17 @@ input[name=slider-controls] {
   position: relative;
 
   float: left;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+.search-button {
+  position: relative;
+
+  display: block;
+  float: left;
   width: 32px;
   height: 32px;
-  margin-right: 10px;
 
   font-size: 0;
 
@@ -310,7 +333,7 @@ input[name=slider-controls] {
   border-radius: 16px;
 }
 
-.search:hover {
+.search-button:hover {
   background-position: -234px -96px;
   background-color: #f8f7f4;
 }
@@ -328,7 +351,7 @@ input[name=slider-controls] {
   display: none;
   width: 310px;
 
-  padding: 21px 16px;
+  padding: 20px 16px;
 
   background: #f8f7f4;
   border-radius: 6px;
@@ -336,14 +359,15 @@ input[name=slider-controls] {
 
 }
 
-.search-input input[type="text"] {
+.search-text {
   box-sizing: border-box;
 
   width: 100%;
+  margin: 1px 0;
   padding: 8px 12px;
 
   font-family: inherit;
-  font-weight: 400;
+  font-weight: inherit;
   font-size: 14px;
   line-height: 24px;
 
@@ -351,11 +375,54 @@ input[name=slider-controls] {
   border-radius: 5px;
 }
 
+.search-text:valid {
+  background: white;
+}
+
+.search-text + label {
+  position: absolute;
+  top: 33px;
+  left: 29px;
+}
+
+.search-text:hover {
+  margin: 0;
+  padding-left: 11px;
+  border-width: 2px;
+}
+
+.search-text:focus {
+  border-color: #5b9ddf;
+}
+
+.search-text:focus + label {
+  top: 5px;
+
+  font-size: 11px;
+  color: #5b9ddf;
+
+  opacity: 1;
+}
+
+.search-text:valid {
+  border: 1px solid #d3d3d2;
+}
+
+.search-text:valid + label {
+  top: 5px;
+
+  font-size: 11px;
+  color: #999999;
+
+  opacity: 1;
+}
+
 .sign-in {
   position: relative;
 
   float: left;
   margin-right: 8px;
+  padding-bottom: 10px;
 }
 
 .enter {
@@ -406,7 +473,7 @@ input[name=slider-controls] {
   right: -2px;
   z-index: 1;
 
-  display: none;
+  display: block; /* !!!!!!! */
   width: 242px;
   padding: 20px 17px 22px 19px;
 
@@ -456,6 +523,7 @@ input[name=slider-controls] {
 
 .cart-button {
   position: relative;
+  padding-bottom: 10px;
 
   float: right;
   width: 120px
@@ -1713,7 +1781,6 @@ input[name=slider-controls] {
 
   font-size: 0;
 
-
   background: url(../img/sprite.png) no-repeat;
   background-position: -213px -156px;
 }
@@ -1728,4 +1795,23 @@ input[name=slider-controls] {
 .goods-border {
   height: 0;
   border: 1px solid #a9b8b1;
+}
+
+.feedback {
+  width: 478px;
+  height: 443px;
+  padding: 18px 25px 25px 25px;
+
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+
+.feedback input[type="text"],
+.feedback input[type="email"] {
+  width: 266px;
+}
+
+.feedback textarea {
+  width: 100%;
+  max-width: 100%;
 }

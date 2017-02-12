@@ -30,7 +30,7 @@
                   Разделитель
                 </li>
                 <li class="items-group items-group-active">
-                  <a href="#">Сливочное</a>
+                  <a href="catalog.html">Сливочное</a>
                 </li>
                 <li class="items-group">
                   <a href="#">Щербеты</a>
@@ -57,10 +57,11 @@
         </nav>
         <div class="header-buttons">
           <div class="search">
-            <span>поиск</span>
+            <span class="search-button">поиск</span>
             <div class="search-input">
               <form action="#" method="post">
-                <input type="text" name="search-text" placeholder="Что ищем?">
+                <input class="search-text" id="search-text" type="text" name="search-text" required>
+                <label class="placeholder-header" for="search-text">Что ищем?</label>
               </form>
             </div>
           </div>
@@ -68,8 +69,10 @@
             <a class="enter" href="#">Вход</a>
             <div class="sign-in-form">
               <form action="#" method="post">
-                <input type="email" name="email" placeholder="Электронная почта">
-                <input type="password" name="password" placeholder="Пароль">
+                <input class="sign-in-email" id="sign-in-email" type="email" name="email">
+                <label class="placeholder-header" for="sign-in-email">Электронная почта</label>
+                <input class="sign-in-password" id="sign-in-password" type="password" name="password">
+                <label class="placeholder-header" for="sign-in-password">Пароль</label>
                 <input class="btn sign-in-submit" type="submit" value="Войти">
                 <div class="sign-in-links">
                   <a class="link-dark" href="#">Забыли пароль?</a>
@@ -84,14 +87,14 @@
               <table class="cart-list">
                 <tr class="cart-list-row">
                   <td class="remove-item">&#10005;</td>
-                  <td class="item-image"><img src="img/item1_mini.png" width="33" height="33"></td>
+                  <td class="item-image"><img src="img/item1_mini.png" width="33" height="33" alt="Мороженое"></td>
                   <td class="item-title">Пломбир с апельсиновым джемом</td>
                   <td class="item-price">1,5 кг х <span>200 руб.</span></td>
                   <td class="item-total">300 руб.</td>
                 </tr>
                 <tr class="cart-list-row">
                   <td class="remove-item">&#10005;</td>
-                  <td class="item-image"><img src="img/item3_mini.png" width="33" height="33"></td>
+                  <td class="item-image"><img src="img/item3_mini.png" width="33" height="33" alt="Мороженое"></td>
                   <td class="item-title">Клубничный пломбир
                   с присыпкой из белого шоколада</td>
                   <td class="item-price">1,5 кг х <span>300 руб.</span></td>
@@ -116,7 +119,7 @@
     </header>
     <div class="breadcrumbs container">
       <a class="link-bright breadcrumb" href="index.html">
-        <span>Главная
+        <span>Главная</span>
       </a>
       <a class="link-bright breadcrumb" href="catalog.html">
         <span>Каталог</span>
@@ -143,10 +146,10 @@
             </fieldset>
             <fieldset class="price-range">
               <legend>
-                <div class="price-controls">
+                <span class="price-controls">
                   <label class="min-price">Цена:<input name="min-price" type="text" value="100">руб. &#8210;</label>
                   <label class="max-price"><input name="max-price" type="text" value="500">руб.</label>
-                </div>
+                </span>
               </legend>
               <div class="range-controls">
                 <div class="scale">
@@ -501,7 +504,7 @@
             <p class="made-in">
               Сделано в
               <a class="link-bright" href="#">
-                <span>HTML Academy<span>
+                <span>HTML Academy</span>
               </a> &copy; 2017
             </p>
           </div>
