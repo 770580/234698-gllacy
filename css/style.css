@@ -1558,7 +1558,7 @@ input[name=slider-controls] {
   background-position: -131px -161px;
 }
 
-.fatness-item:hover .radio-fatness:not([disabled]) label::before {
+.fatness-item:hover .radio-fatness:not([disabled]) + label::before {
   background-position: -201px -119px;
 }
 
@@ -1618,7 +1618,7 @@ input[name=slider-controls] {
   background-position: -172px -10px;
 }
 
-.fillers-item:hover .checkbox-fillers:not([disabled]) label::before {
+.fillers-item:hover .checkbox-fillers:not([disabled]) + label::before {
   background-position: -132px -10px;
 }
 
