@@ -1200,7 +1200,7 @@ input[name=slider-controls] {
 }
 
 .main-footer {
-  margin-top: 20px;
+  margin-top: 18px;
 
   color: #ffffff;
 }
@@ -1631,13 +1631,17 @@ input[name=slider-controls] {
 }
 
 .pagination {
-  margin-top: 100px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+
+  text-align: right;
 }
 
 .pagination-points {
-  float: right;
+  display: inline-block;
 
   font-size: 0;
+  vertical-align: top;
 
   list-style: none;
 }
@@ -1671,22 +1675,25 @@ input[name=slider-controls] {
 }
 
 .pagination-point:first-child a {
-  width: 24px;
+  width: 20px;
   height: 21px;
 
   font-size: 0;
 
-  background: url(../img/left_arrow.png) 50% no-repeat;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -131px -113px;
 }
 
 .pagination-point:last-child a {
-  width: 24px;
+  width: 9px;
   height: 21px;
+  margin-left: 13px;
 
   font-size: 0;
 
 
-  background: url(../img/right_arrow.png) 50% no-repeat;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -213px -156px;
 }
 
 .active-point a {
@@ -1694,4 +1701,9 @@ input[name=slider-controls] {
 
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+.goods-border {
+  height: 0;
+  border: 1px solid #a9b8b1;
 }
