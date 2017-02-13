@@ -363,10 +363,13 @@
       <div class="feedback">
         <h2>Мы обязательно вам ответим!</h2>
         <form action="#" method="post">
-          <input type="text" name="name" placeholder="Как вас зовут?">
-          <input type="text" name="email" placeholder="Ваша почта для ответа?">
-          <textarea name="text" placeholder="Напишите что нибудь..."></textarea>
-          <button class="btn">Отправить</button>
+          <input class="feedback-name" id="feedback-name" type="text" name="name" required>
+          <label class="feedback-placeholder" for="feedback-name">Как вас зовут?</label>
+          <input class="feedback-email" id="feedback-email" type="text" name="email" required>
+          <label class="feedback-placeholder" for="feedback-email">Ваша почта для ответа?</label>
+          <textarea class="feedback-text" id="feedback-text" name="text" required></textarea>
+          <label class="feedback-placeholder" for="feedback-text">Напишите что нибудь...</label>
+          <button class="btn feedback-submit">Отправить</button>
         </form>
       </div>
     </div>
