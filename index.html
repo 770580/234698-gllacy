@@ -88,7 +88,7 @@
           </div>
         </div>
         <div class="work-info">
-          С 10 до 20, ежедневно<br>
+          С 10 до 20, ежедневно
           <span class="phone">8 812 450-25-25</span>
         </div>
       </header>
@@ -120,7 +120,6 @@
         <div class="container clearfix">
           <div class="banner banner-left">
             <h2>Малинка даром!</h2>
-            <img src="img/raspberries.png" width="560" height="229" alt="Малинка даром!">
             <p>При покупке 2 кг любого фруктового
             мороженого, добавим в ваш заказ банку
             малинового варенья бесплатно.
@@ -129,7 +128,6 @@
           </div>
           <div class="banner banner-right">
             <h2>Шоколадки даром!</h2>
-            <img src="img/chocolate.png" width="560" height="229" alt="Малинка даром!">
             <p>При покупке 2 кг пломбира, добавим в ваш
             заказ упаковку вкуснейшей шоколадной
             присыпки совершенно бесплатно.</p>
@@ -252,7 +250,7 @@
                 Доставка нашего мороженого до
                 заказчиков осуществляется в специальном
                 термопаке, который не дает мороженому
-                растаять в пути и позволяет сохранть
+                растаять в пути и позволяет сохранить
                 превосходный вкус.
               </p>
             </div>
@@ -290,26 +288,27 @@
         </div>
       </div>
       <div class="map">
-        <div class="contacts">
-          <div class="address-block">
-            <p class="address-title">
-              Адрес главного офиса<br>
-              и офлайн магазина:
-            </p>
-            <p class="address">
-              ул. Большая Конюшенная<br>
-              19/8, Санкт-Петербург
-            </p>
+        <div class="ya-map" id="ya-map">
+          <div class="contacts">
+            <div class="address-block">
+              <p class="address-title">
+                Адрес главного офиса
+                и офлайн магазина:
+              </p>
+              <p class="address">
+                ул. Большая Конюшенная
+                19/8, Санкт-Петербург
+              </p>
+            </div>
+            <div class="phone-block">
+              Для заказов по телефону:
+              <span class="phone-number">
+                8 812 450-25-25
+              </span>
+              <span>(c 10 до 20 ежедневно)</span>
+            </div>
+            <a class="btn feedback-button" href="feedback.html">Форма обратной связи</a>
           </div>
-          <div class="phone-block">
-            Для заказов по телефону:<br>
-            <span class="phone-number">
-              8 812 450-25-25
-            </span>
-            <br>
-            (c 10 до 20 ежедневно)
-          </div>
-          <a class="btn feedback-button" href="#">Форма обратной связи</a>
         </div>
       </div>
       <footer class="main-footer">
@@ -357,20 +356,23 @@
           </div>
         </div>
       </footer>
-      <div class="feedback feedback-hidden">
-        <h2>Мы обязательно вам ответим!</h2>
-        <span class="feedback-close">X</span>
-        <form action="#" method="post">
-          <input class="feedback-name" id="feedback-name" type="text" name="name" required>
-          <label class="feedback-placeholder" for="feedback-name">Как вас зовут?</label>
-          <input class="feedback-email" id="feedback-email" type="text" name="email" required>
-          <label class="feedback-placeholder" for="feedback-email">Ваша почта для ответа?</label>
-          <textarea class="feedback-text" id="feedback-text" name="text" required></textarea>
-          <label class="feedback-placeholder" for="feedback-text">Напишите что нибудь...</label>
-          <button class="btn feedback-submit">Отправить</button>
-        </form>
+      <div class="feedback-overlay feedback-hidden">
+        <div class="feedback-window">
+          <h2>Мы обязательно вам ответим!</h2>
+          <span class="feedback-close">X</span>
+          <form action="#" method="post">
+            <input class="feedback-name" id="feedback-name" type="text" name="name" required>
+            <label class="feedback-placeholder" for="feedback-name">Как вас зовут?</label>
+            <input class="feedback-email" id="feedback-email" type="text" name="email" required>
+            <label class="feedback-placeholder" for="feedback-email">Ваша почта для ответа?</label>
+            <textarea class="feedback-text" id="feedback-text" name="text" required></textarea>
+            <label class="feedback-placeholder" for="feedback-text">Напишите что нибудь...</label>
+            <button class="btn feedback-submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="js/script.js" type="text/javascript"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zcuwf-nHyOkcQ3zq4NbEIqVp3cCLfC29&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false&amp;id=ya-map"></script>
   </body>
 </html>
