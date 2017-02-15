@@ -1735,9 +1735,6 @@ input[name=slider-controls] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  
-  text-indent: 0.01px;
-  text-overflow: "";
 }
 
 .sort::-ms-expand {
