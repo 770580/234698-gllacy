@@ -1724,6 +1724,7 @@ input[name=slider-controls] {
   height: 36px;
   padding-left: 16px;
 
+  font-family: inherit;
   color: #ffffff;
 
   background: url(../img/select_marker.png) 170px 50% no-repeat;
@@ -1734,6 +1735,10 @@ input[name=slider-controls] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.sort::-ms-expand {
+  display: none;
 }
 
 .sort:hover {
