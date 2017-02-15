@@ -320,6 +320,7 @@ input[name=slider-controls] {
   font-size: 14px;
   color: #999999;
   opacity: 0.52;
+  transition: all linear 0.2s;
 }
 
 .search,
@@ -521,14 +522,10 @@ input[name=slider-controls] {
 }
 
 .sign-in-form input:hover {
-  margin-bottom: 20px;
-
   border-width: 2px;
 }
 
 .sign-in-form input:focus {
-  margin-bottom: 20px;
-
   border-width: 2px;
   border-color: #5b9ddf;
 }
@@ -1278,41 +1275,39 @@ input[name=slider-controls] {
 }
 
 .sender-email {
+  box-sizing: border-box;
   width: 340px;
+  height: 47px;
   margin-right: 7px;
   margin-bottom: 13px;
-  padding: 9px 12px;
+  padding: 0 12px;
 
   font-family: inherit;
   font-weight: inherit;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 47px;
 
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+}
+
+.sender-email:hover {
+  border-width: 2px;
+}
+
+.sender-email:focus {
+  border-width: 2px;
+  border-color: #5b9ddf;
+}
+
+.sender-email:valid:not(:focus) {
+  border: 1px solid #d3d3d2;
 }
 
 .sender-email + .placeholder-sender {
   position: absolute;
   top: 14px;
   left: 13px;
-}
-
-.sender-email:hover {
-  margin-right: 6px;
-  margin-bottom: 12px;
-  padding-left: 11px;
-
-  border-width: 2px;
-}
-
-.sender-email:focus {
-  margin-right: 6px;
-  margin-bottom: 12px;
-  padding-left: 11px;
-
-  border-width: 2px;
-  border-color: #5b9ddf;
 }
 
 .sender-email:focus + .placeholder-sender {
@@ -1322,14 +1317,6 @@ input[name=slider-controls] {
   color: #5b9ddf;
 
   opacity: 1;
-}
-
-.sender-email:valid:not(:focus) {
-  margin-right: 7px;
-  margin-bottom: 13px;
-  padding: 9px 12px;
-
-  border: 1px solid #d3d3d2;
 }
 
 .sender-email:valid:not(:focus) + .placeholder-sender {
@@ -1342,11 +1329,13 @@ input[name=slider-controls] {
 }
 
 .sender-inner input[type="submit"] {
+  display: inline-block;
   padding: 11px 19px;
 
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
+  vertical-align: top;
 
   border-radius: 22px;
 }
@@ -2119,35 +2108,37 @@ input[name=slider-controls] {
   font-size: 16px;
   color: #999999;
   opacity: 0.52;
+  transition: all linear 0.2s;
 }
 
 .feedback-window input[type="text"] {
+  box-sizing: border-box;
+
   width: 239px;
+  height: 45px;
   margin-bottom: 20px;
-  padding: 9px 13px;
+  padding: 0 13px;
 
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 43px;
 
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
 
 .feedback-window input[type="text"]:hover {
-  margin-bottom: 19px;
-  padding-top: 8px;
-  padding-left: 12px;
   border-width: 2px;
 }
 
 .feedback-window input[type="text"]:focus {
-  margin-bottom: 19px;
-  padding-top: 8px;
-  padding-left: 12px;
   border-width: 2px;
   border-color: #5b9ddf;
+}
+
+.feedback-window input[type="text"]:valid:not(:focus) {
+  border: 1px solid #d3d3d2;
 }
 
 .feedback-name + label {
