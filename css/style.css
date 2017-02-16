@@ -795,8 +795,10 @@ input[name=slider-controls] {
 .phone {
   display: inline-block;
   padding-top: 4px;
+
   font-size: 22px;
   line-height: 24px;
+  vertical-align: top;
 }
 
 .slider-wrapper {
@@ -1815,6 +1817,7 @@ input[name=slider-controls] {
 
   font-size: 14px;
   line-height: 16px;
+  vertical-align: top;
 }
 
 .price-controls input {
