@@ -784,7 +784,7 @@ input[name=slider-controls] {
 
 .work-info {
   float: right;
-  width: 180px;
+  width: 190px;
 
   font-size: 14px;
   line-height: 16px;
@@ -1848,6 +1848,10 @@ input[name=slider-controls] {
   border-radius: 18px;
 }
 
+.fatness-items .radio-fatness {
+  display: none;
+}
+
 .fatness-item {
   position: relative;
 
@@ -1855,11 +1859,7 @@ input[name=slider-controls] {
   padding-right: 14px;
 }
 
-.fatness-item .radio-fatness {
-  display: none;
-}
-
-.fatness-item label::before {
+.fatness-item::before {
   content: " ";
 
   position: absolute;
@@ -1881,11 +1881,11 @@ input[name=slider-controls] {
   background-position: -5px -655px;
 }
 
-.fatness-item:hover .radio-fatness:not([disabled]) + label::before {
+.radio-fatness:not([disabled]) + .fatness-item:hover::before {
   background-position: -5px -623px;
 }
 
-.fatness-item:hover .radio-fatness:checked:not([disabled]) + label::before {
+.radio-fatness:checked:not([disabled]) + .fatness-item:hover::before {
   background-position: -5px -687px;
 }
 
@@ -1908,7 +1908,7 @@ input[name=slider-controls] {
   border-radius: 18px;
 }
 
-.fillers-item .checkbox-fillers {
+.fillers-items .checkbox-fillers {
   display: none;
 }
 
@@ -1919,7 +1919,7 @@ input[name=slider-controls] {
   padding-right: 16px;
 }
 
-.fillers-item label::before {
+.fillers-item::before {
   content: "";
 
   position: absolute;
@@ -1933,19 +1933,19 @@ input[name=slider-controls] {
   background-position: -5px -65px;
 }
 
-.checkbox-fillers[disabled] + label::before {
+.checkbox-fillers[disabled] + .fillers-item::before {
   opacity: 0.4;
 }
 
-.fillers-item .checkbox-fillers:checked + label::before {
+.checkbox-fillers:checked + .fillers-item::before {
   background-position: -5px -125px;
 }
 
-.fillers-item:hover .checkbox-fillers:not([disabled]) + label::before {
+.checkbox-fillers:not([disabled]) + .fillers-item:hover::before {
   background-position: -5px -95px;
 }
 
-.fillers-item:hover .checkbox-fillers:checked:not([disabled]) + label::before {
+.checkbox-fillers:checked:not([disabled]) + .fillers-item:hover::before {
   background-position: -5px -155px;
 }
 
